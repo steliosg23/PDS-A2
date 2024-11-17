@@ -151,6 +151,9 @@ The following shows the results for hazard-category and product-category tasks f
 
 The following shows the results for hazard and product tasks for Subtask 1:
 
+***But the rating shows for Sub Task 2 a score of 0.3313 .***
+
+
 | Submission File                         | Score         | Status   | 
 |-----------------------------------------|---------------|----------|
 | submission.zip                          | ---           | Failed   | 
@@ -159,7 +162,6 @@ The following shows the results for hazard and product tasks for Subtask 1:
 | submission_v3.zip                       | 0.00000       | Finished | 
 | submission_finetuned_PubMedBERT.zip     | 0.00000       | Finished |
 
-*But the rating show for Sub Task 2 a score of 0.3313 .*
 
 # Overfitting in the Competition Results
 The competition results suggest potential overfitting in the models. The scores for the `submission_finetuned_PubMedBERT.zip` file were significantly higher for the training set compared to the test set, which may indicate that the model is overfitting to the training data.
