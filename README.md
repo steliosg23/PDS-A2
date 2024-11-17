@@ -167,3 +167,8 @@ The competition results suggest potential overfitting in the models. The scores 
 # Conclusion
 This solution combines advanced NLP (Finetuned PubMedBERT) and traditional machine learning (LightGBM) techniques to classify food hazard data. The solution addresses both general and specific hazard and product classification tasks. Both models were trained and evaluated, with their results summarized above.The submission models are retrained based on the benchmark results to generate the final predictions.
 You can re-run the solution by following the provided instructions and reproduce the results with the corresponding datasets and models. 
+
+# References:
+- [Stack Overflow](https://stackoverflow.com): For troubleshooting and solutions to coding challenges.
+- [Medium - Towards Data Science](https://towardsdatascience.com): For articles and tutorials on data science techniques and best practices.
+- [ChatGPT](https://openai.com/chatgpt): For quick assistance and guidance on various data science topics.
