@@ -37,8 +37,8 @@ This repository contains the solution for the **Food Hazard Detection Challenge*
 - **Submissions**: Contains various submission files.
   - **lgbm_submission_title.zip**: Submission file for the model using LightGBM on title data.
   - **submission_finetuned_PubMedBERT.zip**: Submission file for a fine-tuned PubMedBERT model.
-  - **submission_v1.zip**: Version 1 of a submission file.
-  - **submission_v3.zip**: Version 3 of a submission file.
+  - **submission_v1.zip**: Version 1 of a submission file using LightGBM.
+  - **submission_v3.zip**: Version 3 of a submission file using LightGBM.
 
 
 ## Files
