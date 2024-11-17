@@ -26,8 +26,7 @@ This repository contains the solution for the **Food Hazard Detection Challenge*
 ### Directory Contents Description:
 
 - **Data**: Contains datasets used for the Food Hazard Detection Challenge.
-  - **test_data**: Folder with data for testing models.
-  - **validation_data**: Folder with data used for validating model performance.
+  - **validation_data**: Folder with data used for validating model performance on CodaLab Food Hazard Detection Challenge.
   - **incidents_train.csv**: Training dataset containing labeled food hazard incidents.
 
 - **Notebooks**: Contains Jupyter notebooks for analysis and model development.
