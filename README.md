@@ -1,6 +1,6 @@
 ## Master in Data Science AUEB 2024-2025
 
-![AUEB Logo](./logo_aueb.jpg) ![Data Science Logo](./logo_data_science.jpg)
+![AUEB Logo]("C:\Users\steli\OneDrive\Desktop\Stelios\DSAUEB\Trimester 1\PDS\A2\PDS-A2\Notebooks\logo_aueb.jpg") ![Data Science Logo](./logo_data_science.jpg)
 
 # PDS-A2
 ## Stylianos Giagkos f3352410
