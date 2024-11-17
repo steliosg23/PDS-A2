@@ -1,7 +1,7 @@
 # Master in Data Science AUEB 2024-2025
 ## Practical Data Science - Assignment 2
 ## Stylianos Giagkos f3352410
-## A2 Assignment Food Hazard Detection Challenge Solution
+# Food Hazard Detection Challenge 
 
 This repository contains the solution for the **Food Hazard Detection Challenge**. The challenge involves classifying food safety-related incidents based on short titles and long descriptions. The solution leverages both **Finetuned PubMedBERT** and **LightGBM (LGBM)** models for classification into hazard-category, product-category, hazard, and product classifications.
 
