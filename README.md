@@ -54,7 +54,7 @@ pip install torch lightgbm pandas scikit-learn matplotlib tqdm transformers nltk
 - **transformers**
 - **lightgbm**
 - **matplotlib**
-
+```
 ## How to Re-run the Solution
 
 ### Step 1: Data Preparation
