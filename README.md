@@ -169,6 +169,7 @@ This solution combines advanced NLP (Finetuned PubMedBERT) and traditional machi
 You can re-run the solution by following the provided instructions and reproduce the results with the corresponding datasets and models. 
 
 # References:
+
+- [ChatGPT](https://openai.com/chatgpt): For quick assistance, code help, debugging, and guidance on various data science topics.
 - [Stack Overflow](https://stackoverflow.com): For troubleshooting and solutions to coding challenges.
 - [Medium - Towards Data Science](https://towardsdatascience.com): For articles and tutorials on data science techniques and best practices.
-- [ChatGPT](https://openai.com/chatgpt): For quick assistance and guidance on various data science topics.
