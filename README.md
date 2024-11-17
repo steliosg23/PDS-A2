@@ -23,7 +23,7 @@ This repository contains the solution for the **Food Hazard Detection Challenge*
 - **Classify hazard**: Classifies the specific hazard type.
 - **Classify product**: Classifies the specific product type.
 
-### Directory Contents Description:
+## Directory Contents Description:
 
 - **Data**: Contains datasets used for the Food Hazard Detection Challenge.
   - **validation_data**: Folder with data used for validating model performance on CodaLab Food Hazard Detection Challenge.
