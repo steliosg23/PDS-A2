@@ -1,3 +1,7 @@
+## Master in Data Science AUEB 2024-2025
+
+![AUEB Logo](logo_aueb.jpg) ![Data Science Logo](logo_data_science.jpg)
+
 # PDS-A2
 ## Stylianos Giagkos f3352410
 ## A2 Assignment Food Hazard Detection Challenge Solution
