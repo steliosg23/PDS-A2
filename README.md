@@ -44,7 +44,7 @@ The following files are included in the repository:
 ## Requirements
 Make sure to install the required dependencies before running the code. You can use the following pip command to install the necessary packages:
 ```bash
-pip install torch lightgbm pandas scikit-learn matplotlib tqdm transformers nltk
+pip install torch lightgbm pandas scikit-learn matplotlib tqdm transformers nltk numpy
 ```
 ### Additional Libraries:
 - **pandas**
@@ -55,6 +55,7 @@ pip install torch lightgbm pandas scikit-learn matplotlib tqdm transformers nltk
 - **transformers**
 - **lightgbm**
 - **matplotlib**
+- **numpy**
 
 ## How to Re-run the Solution
 
