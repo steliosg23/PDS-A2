@@ -13,7 +13,7 @@ This repository contains the solution for the **Food Hazard Detection Challenge*
    - **Finetuned PubMedBERT**: Fine-tuned on the dataset to classify food hazard-related texts.
    - **LightGBM**: A gradient boosting model for classification based on features derived from the data.
 3. **Evaluation**: Both models are evaluated on performance metrics such as accuracy, precision, recall, and F1-score.
-4. **Submission**: Generation of final predictions for submission in the required format.
+4. **Training and Submission**: Generation of final predictions based on the final optimal model and submission in the required format on CodaLab competition.
 
 ### Subtasks (Performed Separately for Title and Text):
 #### Subtask 1:
