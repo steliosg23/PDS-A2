@@ -199,7 +199,7 @@ The competition results suggest potential overfitting in the models. The scores 
 | hazard             | 0.8887   |
 | product            | 0.6004   |
 
-The submission file associated with this augmented training approach was **Augmented_Train_Set_Submission_Model_Finetuned_PubMedBERT_PDS_A2_Food_Hazard_Detection.ipynb**. The leaderboard scores for this submission were:
+The submission file associated with this augmented training approach was **Augmented_Submission_Model_Finetuned_PubMedBERT_PDS_A2_Food_Hazard_Detection.ipynb**. The leaderboard scores for this submission were:
 
 - **ST1:** 0.6870518521 (`submission_augmented_train_set_finetunedPUBMEDBERT.zip`) on 11/20/2024 at 17:27:18
 - **ST2:** 0.0 (`submission_finetuned_PubMedBERT.zip`) on 11/20/2024 at 17:41:21
