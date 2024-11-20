@@ -45,20 +45,33 @@ This repository contains the solution for the **Food Hazard Detection Challenge*
 ## Files
 The following files are included in the repository:
 
-- **EDA PDS A2 Food Hazard Detection.ipynb**:  
-  Performs exploratory data analysis on the dataset, including data cleaning and visualization.
-  
-- **BENCHMARKS Finetuned PubMedBERT PDS A2 Food Hazard Detection.ipynb**:  
-  Implements the fine-tuned PubMedBERT model for food hazard detection, classifying hazard-category, product-category, hazard, and product for both titles and descriptions.
-  
-- **BENCHMARKS LGBM PDS A2 Food Hazard Detection .ipynb**:  
-  Implements the LightGBM model for classification, similar to the PubMedBERT model, covering all subtasks for title and text classification.
-  
-- **SUBMISSION Finetuned PubMedBERT PDS A2 Food Hazard Detection.ipynb**:  
-  Retrains the PubMedBERT model based on the results from the benchmark evaluation and generates the final submission file.
-  
-- **SUBMISSION LGBM PDS A2 Food Hazard Detection .ipynb**:  
-  Retrains the LightGBM model based on the results from the benchmark evaluation and generates the final submission file.
+### Benchmarks Notebooks
+- **[Augmented Train Set Benchmark Models Finetuned PubMedBERT PDS A2.ipynb]**  
+  Notebook for evaluating benchmark models using an **augmented training set** with PubMedBERT.
+
+- **[Benchmark Models Finetuned PubMedBERT PDS A2 Food Hazard Detection.ipynb]**  
+  Notebook for running and evaluating benchmark models using PubMedBERT with the **initial training set**.
+
+- **[Benchmark Models LGBM PDS A2 Food Hazard Detection.ipynb]**  
+  Notebook for experimenting with LightGBM models for food hazard detection using the **initial training set**.
+
+### Submission Notebooks
+- **[Augmented_Train_Set_Submission_Model_Finetuned_PubMedBERT_PDS_A2.ipynb]**  
+  Submission notebook for a model finetuned on an **augmented training set** using PubMedBERT.
+
+- **[Submission Model Finetuned PubMedBERT PDS A2 Food Hazard Detection.ipynb]**  
+  Submission notebook for a model finetuned on the **initial training set** using PubMedBERT.
+
+- **[Submission Model LGBM PDS A2 Food Hazard Detection.ipynb]**  
+  Submission notebook for LightGBM models trained on the **initial training set**.
+
+### Extra Notebooks
+- **[EDA Notebook PDS A2 Food Hazard Detection.ipynb]**  
+  Notebook for performing Exploratory Data Analysis (EDA) on the **initial training set**.
+
+- **[Incidents Augmentation using Techniques.ipynb]**  
+  Notebook for applying data augmentation techniques to incident descriptions and titles, creating an **augmented training set** for imbalanced classes especially in categories of ```hazard``` and ```product```.
+
 
 ## Requirements
 Make sure to install the required dependencies before running the code. You can use the following pip command to install the necessary packages:
