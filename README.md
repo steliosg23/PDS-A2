@@ -191,7 +191,7 @@ The submission file associated with this augmented training approach was **Augme
 - **ST1:** 0.6870518521 (`submission_augmented_train_set_finetunedPUBMEDBERT.zip`) on 11/20/2024 at 17:27:18
 - **ST2:** 0.0 (`submission_finetuned_PubMedBERT.zip`) on 11/20/2024 at 17:41:21
 
-Despite the data augmentation efforts, there was no significant improvement in the competition leaderboard scores. For instance, ST1 achieved a score of **0.6870518521**, and the ST2 submission showed discrepancies, with the leaderboard reflecting an approximate score of **0.37**. This suggests that data augmentation did not substantially address the overfitting issue or enhance generalization performance in the competition context. Further investigation and alternative approaches may be required to improve model performance. 
+Despite the data augmentation efforts, there was no significant improvement in the competition leaderboard scores. For instance, ST1 achieved a score of **0.6870518521**, and the ST2 submission showed discrepancies, with the leaderboard reflecting an approximate score of **0.35**. This suggests that data augmentation did not substantially address the overfitting issue or enhance generalization performance in the competition context. Further investigation and alternative approaches may be required to improve model performance. 
 
 # Conclusion
 This solution combines advanced NLP (Finetuned PubMedBERT) and traditional machine learning (LightGBM) techniques to classify food hazard data. The solution addresses both general and specific hazard and product classification tasks. Both models were trained and evaluated, with their results summarized above.The submission models are retrained based on the benchmark results to generate the final predictions.
