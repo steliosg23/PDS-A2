@@ -165,7 +165,33 @@ The following shows the results for hazard and product tasks for Subtask 1:
 
 
 # Overfitting in the Competition Results
-The competition results suggest potential overfitting in the models. The scores for the `submission_finetuned_PubMedBERT.zip` file were significantly higher for the training set compared to the test set, which may indicate that the model is overfitting to the training data.
+
+The competition results suggest potential overfitting in the models. The scores for the `submission_finetuned_PubMedBERT.zip` file were significantly higher for the training set compared to the test set, which may indicate that the model is overfitting to the training data. To mitigate this, I attempted data augmentation in the **Incidents Augmentation using techniques.ipynb** file. The benchmark results using the augmented training data are as follows:
+
+### Collected F1-Scores for Title-Focused Classification (Augmented Data)
+
+| Task               | F1-Score |
+|--------------------|----------|
+| hazard-category    | 0.9266   |
+| product-category   | 0.8972   |
+| hazard             | 0.8169   |
+| product            | 0.5898   |
+
+### Collected F1-Scores for Text-Focused Classification (Augmented Data)
+
+| Task               | F1-Score |
+|--------------------|----------|
+| hazard-category    | 0.9643   |
+| product-category   | 0.8834   |
+| hazard             | 0.8887   |
+| product            | 0.6004   |
+
+The submission file associated with this augmented training approach was **Augmented_Train_Set_Submission_Model_Finetuned_PubMedBERT_PDS_A2_Food_Hazard_Detection.ipynb**. The leaderboard scores for this submission were:
+
+- **ST1:** 0.6870518521 (`submission_augmented_train_set_finetunedPUBMEDBERT.zip`) on 11/20/2024 at 17:27:18
+- **ST2:** 0.0 (`submission_finetuned_PubMedBERT.zip`) on 11/20/2024 at 17:41:21
+
+Despite the data augmentation efforts, there was no significant improvement in the competition leaderboard scores. For instance, ST1 achieved a score of **0.6870518521**, and the ST2 submission showed discrepancies, with the leaderboard reflecting an approximate score of **0.37**. This suggests that data augmentation did not substantially address the overfitting issue or enhance generalization performance in the competition context. Further investigation and alternative approaches may be required to improve model performance. 
 
 # Conclusion
 This solution combines advanced NLP (Finetuned PubMedBERT) and traditional machine learning (LightGBM) techniques to classify food hazard data. The solution addresses both general and specific hazard and product classification tasks. Both models were trained and evaluated, with their results summarized above.The submission models are retrained based on the benchmark results to generate the final predictions.
