@@ -177,7 +177,7 @@ The following shows the results for hazard and product tasks for Subtask 1:
 | submission_finetuned_PubMedBERT.zip     | 0.00000       | Finished |
 
 
-# Overfitting in the Competition Results
+# Overfitting Indications from Competition Results
 
 The competition results suggest potential overfitting in the models. The scores for the `submission_finetuned_PubMedBERT.zip` file were significantly higher for the training set compared to the test set, which may indicate that the model is overfitting to the training data. To mitigate this, I attempted data augmentation in the **Incidents Augmentation using techniques.ipynb** file. The benchmark results using the augmented training data are as follows:
 
