@@ -56,7 +56,7 @@ The following files are included in the repository:
   Notebook for experimenting with LightGBM models for food hazard detection using the **initial training set**.
 
 ### Submission Notebooks
-- **[Augmented_Train_Set_Submission_Model_Finetuned_PubMedBERT_PDS_A2.ipynb]**  
+- **[Augmented_Submission_Model_Finetuned_PubMedBERT_PDS_A2.ipynb]**  
   Submission notebook for a model finetuned on an **augmented training set** using PubMedBERT.
 
 - **[Submission Model Finetuned PubMedBERT PDS A2 Food Hazard Detection.ipynb]**  
