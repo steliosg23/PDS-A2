@@ -197,7 +197,6 @@ I am trying to explain why the augmented dataset did not improve the model's per
 
 2. **Overfitting**: Despite using an augmented dataset, the model might still be overfitting to both the original and augmented data. If the augmented data is too similar to the original, the model may memorize patterns rather than learning to generalize, leading to poor performance on unseen data.
 
-3. **Insufficient Augmentation Techniques**: The augmentation methods used, such as simple word replacements or noise addition, might not be sufficient. More advanced techniques like back-translation or context-aware transformations could help generate more useful variations that would better support the model's learning.
 
 # Conclusion
 This solution combines advanced NLP (Finetuned PubMedBERT) and traditional machine learning (LightGBM) techniques to classify food hazard data. The solution addresses both general and specific hazard and product classification tasks. Both models were trained and evaluated, with their results summarized above.The submission models are retrained based on the benchmark results to generate the final predictions.
