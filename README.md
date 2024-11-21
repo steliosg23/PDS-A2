@@ -24,25 +24,8 @@ This repository contains the solution for the **Food Hazard Detection Challenge*
 - **Classify hazard**: Classifies the specific hazard type.
 - **Classify product**: Classifies the specific product type.
 
-## Directory Contents Description:
+## Repository Files Description:
 
-- **Data**: Contains datasets used for the Food Hazard Detection Challenge.
-  - **validation_data**: Folder with data used for validating model performance on CodaLab Food Hazard Detection Challenge.
-  - **incidents_train.csv**: Training dataset containing labeled food hazard incidents.
-
-- **Notebooks**: Contains Jupyter notebooks for analysis and model development.
-  - **Benchmarks notebooks**: Includes notebooks for baseline models and benchmark results.
-  - **Submission notebooks**: Notebooks used to prepare final submission files.
-  - **EDA notebook PDS A2 Food Hazard**: Notebook for exploratory data analysis (EDA) related to the Food Hazard Detection Challenge.
-
-- **Submissions**: Contains various submission files.
-  - **lgbm_submission_title.zip**: Submission file for the model using LightGBM on title data.
-  - **submission_finetuned_PubMedBERT.zip**: Submission file for a fine-tuned PubMedBERT model.
-  - **submission_v1.zip**: Version 1 of a submission file using LightGBM.
-  - **submission_v3.zip**: Version 3 of a submission file using LightGBM.
-
-
-## Files
 The following files are included in the repository:
 
 ### Benchmarks Notebooks
