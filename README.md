@@ -189,6 +189,16 @@ The submission file associated with this augmented training approach was **Augme
 
 Despite the data augmentation efforts, there was no significant improvement in the competition leaderboard scores. For instance, ST1 achieved a score of **0.6870518521**, and the ST2 submission showed discrepancies, with the leaderboard reflecting an approximate score of **0.35**. This suggests that data augmentation did not substantially address the overfitting issue or enhance generalization performance in the competition context. Further investigation and alternative approaches may be required to improve model performance. 
 
+# Explanation for Model Performance Despite Augmented Dataset
+
+I am trying to explain why the augmented dataset did not improve the model's performance in the following points:
+
+1. **Nature of Augmentation**: The augmentation techniques I applied might not have introduced enough diversity or complexity in the data. This could mean the model didn't get new, meaningful examples to improve its ability to generalize.
+
+2. **Overfitting**: Despite using an augmented dataset, the model might still be overfitting to both the original and augmented data. If the augmented data is too similar to the original, the model may memorize patterns rather than learning to generalize, leading to poor performance on unseen data.
+
+3. **Insufficient Augmentation Techniques**: The augmentation methods used, such as simple word replacements or noise addition, might not be sufficient. More advanced techniques like back-translation or context-aware transformations could help generate more useful variations that would better support the model's learning.
+
 # Conclusion
 This solution combines advanced NLP (Finetuned PubMedBERT) and traditional machine learning (LightGBM) techniques to classify food hazard data. The solution addresses both general and specific hazard and product classification tasks. Both models were trained and evaluated, with their results summarized above.The submission models are retrained based on the benchmark results to generate the final predictions.
 You can re-run the solution by following the provided instructions and reproduce the results with the corresponding datasets and models. 
