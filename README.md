@@ -29,8 +29,6 @@ This repository contains the solution for the **Food Hazard Detection Challenge*
 The following files are included in the repository:
 
 ### Benchmarks Notebooks
-- **[AnB_Benchmark_PubMedBERT.ipynb]**  
-  Notebook for evaluating benchmark models using an **augmented training set** with PubMedBERT.
 
 - **[Benchmark Models Finetuned PubMedBERT PDS A2 Food Hazard Detection.ipynb]**  
   Notebook for running and evaluating benchmark models using PubMedBERT with the **initial training set**.
@@ -38,15 +36,19 @@ The following files are included in the repository:
 - **[Benchmark Models LGBM PDS A2 Food Hazard Detection.ipynb]**  
   Notebook for experimenting with LightGBM models for food hazard detection using the **initial training set**.
 
+- **[AnB_Benchmark_PubMedBERT.ipynb]**  
+  Notebook for evaluating benchmark models using an **augmented training set** with PubMedBERT.
+
 ### Submission Notebooks
-- **[AnB_Submission_PubMedBERT.ipynb]**  
-  Submission notebook for a model finetuned on an **augmented training set** using PubMedBERT.
 
 - **[Submission Model Finetuned PubMedBERT PDS A2 Food Hazard Detection.ipynb]**  
   Submission notebook for a model finetuned on the **initial training set** using PubMedBERT.
 
 - **[Submission Model LGBM PDS A2 Food Hazard Detection.ipynb]**  
   Submission notebook for LightGBM models trained on the **initial training set**.
+
+- **[AnB_Submission_PubMedBERT.ipynb]**  
+  Submission notebook for a model finetuned on an **augmented training set** using PubMedBERT.
 
 ### Extra Notebooks
 - **[EDA Notebook PDS A2 Food Hazard Detection.ipynb]**  
@@ -83,9 +85,9 @@ Run `EDA PDS A2 Food Hazard Detection.ipynb` to clean and visualize the data.
 ### Step 3: Model Training
 You can choose between:
 
-- **Finetuned PubMedBERT on Augmented and Balanced Dataset**: Run `AnB_Benchmark_PubMedBERT.ipynb`.
 - **Finetuned PubMedBERT on initial data**: Run `BENCHMARKS Finetuned PubMedBERT PDS A2 Food Hazard Detection.ipynb`.
 - **LightGBM**: Run `BENCHMARKS LGBM PDS A2 Food Hazard Detection .ipynb`.
+- **Finetuned PubMedBERT on Augmented and Balanced Dataset**: Run `AnB_Benchmark_PubMedBERT.ipynb`.
 
 ### Step 4: Model Evaluation
 Both models evaluate accuracy, precision, recall, and F1-score.
@@ -93,29 +95,11 @@ Both models evaluate accuracy, precision, recall, and F1-score.
 ### Step 5: Retraining for Submission
 Retrain using the submission notebooks to create final submissions for competitions based on the best model of the respective benchmarks notebooks:
 
-- **Finetuned PubMedBERT on Augmented and Balanced Dataset**: Run `AnB_Submission_PubMedBERT.ipynb`.
 - **For PubMedBERT on initial data**: Run `SUBMISSION Finetuned PubMedBERT PDS A2 Food Hazard Detection.ipynb`.
 - **For LightGBM**: Run `SUBMISSION LGBM PDS A2 Food Hazard Detection .ipynb`.
+- **Finetuned PubMedBERT on Augmented and Balanced Dataset**: Run `AnB_Submission_PubMedBERT.ipynb`.
 
 ## Results
-
-### Finetuned PubMedBERT Model on augmented and balanced Data (Title-based):
-
-| Task               | F1-Score |
-|--------------------|----------|
-| hazard-category    | 0.9598   |
-| product-category   | 0.9710   |
-| hazard             | 0.8381   |
-| product            | 0.6066   |
-
-### Finetuned PubMedBERT Model on augmented and balanced data (Text-based):
-
-| Task               | F1-Score |
-|--------------------|----------|
-| hazard-category    | 0.9566   |
-| product-category   | 0.9393   |
-| hazard             | 0.8370   |
-| product            | 0.5500   |
 
 ### Finetuned PubMedBERT Model on initial Data (Title-based):
 | Task                        | F1-Score |
@@ -148,6 +132,24 @@ Retrain using the submission notebooks to create final submissions for competiti
 | product-category (Text)     | 0.6682   |
 | hazard (Text)               | 0.7671   |
 | product (Text)              | 0.0479   |
+
+### Finetuned PubMedBERT Model on augmented and balanced Data (Title-based):
+
+| Task               | F1-Score |
+|--------------------|----------|
+| hazard-category    | 0.9598   |
+| product-category   | 0.9710   |
+| hazard             | 0.8381   |
+| product            | 0.6066   |
+
+### Finetuned PubMedBERT Model on augmented and balanced data (Text-based):
+
+| Task               | F1-Score |
+|--------------------|----------|
+| hazard-category    | 0.9566   |
+| product-category   | 0.9393   |
+| hazard             | 0.8370   |
+| product            | 0.5500   |
 
 
 
