@@ -55,7 +55,7 @@ The following files are included in the repository:
   Notebook for performing Exploratory Data Analysis (EDA) on the **initial training set**.
 
 - **[data_augmentation.ipynb]**  
-  Notebook for applying data augmentation using back translationto incident descriptions and titles, oversampling and undersampling , creating an **augmented training set** for imbalanced classes especially in categories of ```hazard``` and ```product```.
+  Notebook for applying data augmentation using back translation to incident descriptions and titles, oversampling and undersampling , creating an **augmented training set** for imbalanced classes especially in categories of ```hazard``` and ```product```.
 
 
 ## Requirements
@@ -208,7 +208,7 @@ The submission file associated with this augmented training approach was **AnB_S
 - **ST1:** 0.6876231681 (`AnB Data Finetuned PubMedBERT.zip`) on 11/23/2024 at 23:11:21
 - **ST2:** 0.0 (`AnB Data Finetuned PubMedBERT.zip`) on 11/23/2024 at 23:03:11
 
-Despite the data augmentation efforts, there was no significant improvement in the competition leaderboard scores. For instance, ST1 achieved a score of **6876231681**, and the ST2 submission showed discrepancies, with the leaderboard reflecting an approximate score of **0.35**. This suggests that data augmentation did not substantially address the overfitting issue or enhance generalization performance in the competition context. Further investigation and alternative approaches may be required to improve model performance. 
+Despite the data augmentation efforts, there was no significant improvement in the competition leaderboard scores. For instance, ST1 achieved a score of **0.6876231681**, and the ST2 submission showed discrepancies, with the leaderboard reflecting an approximate score of **0.35**. This suggests that data augmentation did not substantially address the overfitting issue or enhance generalization performance in the competition context. Further investigation and alternative approaches may be required to improve model performance. 
 
 # Explanation for Model Performance Despite Augmented Dataset
 
@@ -216,7 +216,7 @@ I am trying to explain why the augmented dataset did not improve the model's per
 
 1. **Nature of Augmentation**: The augmentation techniques I applied might not have introduced enough diversity or complexity in the data. This could mean the model didn't get new, meaningful examples to improve its ability to generalize.
 
-2. **Overfitting**: Despite using an augmented dataset with back translation and over/under sampling, the model might still was overfitting to both the original and augmented data. 
+2. **Overfitting**: Despite using an augmented dataset with  and over/under sampling, the model might still was overfitting to both the original and augmented data. 
 
 **An assumption is that the augmented data is too similar to the original, the model may memorize patterns rather than learning to generalize, leading to poor performance on unseen data.**
 
