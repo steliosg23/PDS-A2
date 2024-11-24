@@ -158,56 +158,55 @@ The following shows the results for hazard-category and product-category tasks f
 
 | Submission File                         | Score         | Status   | 
 |-----------------------------------------|---------------|----------|
-| submission.zip                          | ---           | Failed   | 
-| submission.zip                          | 0.6428057851  | Finished | 
-| lgbm_submission_title.zip               | 0.6428057851  | Finished | 
-| submission_v3.zip                       | 0.6252022003  | Finished | 
-| submission_finetuned_PubMedBERT.zip     | 0.6992400644  | Finished | 
+| submission_finetuned_PubMedBERT.zip	    | 0.6992400644  | Finished | 
+| AnB Data Finetuned PubMedBERT.zip       | 0.6876231681  | Finished | 
+| submission.zip (LGBM)                   | 0.6428057851  | Finished | 
+
 
 # Competition Results for Subtask 2 (Hazard, Product)
 
 The following shows the results for hazard and product tasks for Subtask 1:
 
-***But the rating shows for Sub Task 2 a score of 0.3313 .***
+***But the rating shows for Sub Task 2 a score of 0.3313 for submission_finetuned_PubMedBERT.zip ***
 
 
 | Submission File                         | Score         | Status   | 
 |-----------------------------------------|---------------|----------|
-| submission.zip                          | ---           | Failed   | 
-| submission.zip                          | 0.00000       | Finished | 
-| lgbm_submission_title.zip               | 0.00000       | Finished | 
-| submission_v3.zip                       | 0.00000       | Finished | 
 | submission_finetuned_PubMedBERT.zip     | 0.00000       | Finished |
+| AnB Data Finetuned PubMedBERT.zip	      | 0.00000       | Finished | 
+| submission.zip (LGBM)                   | 0.00000       | Finished | 
 
 
 # Overfitting Indications from Competition Results
 
-The competition results suggest potential overfitting in the models. The scores for the `submission_finetuned_PubMedBERT.zip` file were significantly higher for the training set compared to the test set, which may indicate that the model is overfitting to the training data. To mitigate this, I attempted data augmentation in the **Incidents Augmentation using techniques.ipynb** file. The benchmark results using the augmented training data are as follows:
+The competition results suggest potential overfitting in the models. The scores for the `submission_finetuned_PubMedBERT.zip` and `AnB Data Finetuned PubMedBERT.zip` file were significantly higher for the training set compared to the test set, which may indicate that the model is overfitting to the training data. To mitigate this, I attempted data augmentation in the **data_augmentation.ipynb** file. The benchmark results using the augmented training data are as follows:
 
 ### Collected F1-Scores for Title-Focused Classification (Augmented Data)
 
-| Task               | F1-Score |
-|--------------------|----------|
-| hazard-category    | 0.9266   |
-| product-category   | 0.8972   |
-| hazard             | 0.8169   |
-| product            | 0.5898   |
-
-### Collected F1-Scores for Text-Focused Classification (Augmented Data)
+### Finetuned PubMedBERT Model on augmented and balanced Data (Title-based):
 
 | Task               | F1-Score |
 |--------------------|----------|
-| hazard-category    | 0.9643   |
-| product-category   | 0.8834   |
-| hazard             | 0.8887   |
-| product            | 0.6004   |
+| hazard-category    | 0.9598   |
+| product-category   | 0.9710   |
+| hazard             | 0.8381   |
+| product            | 0.6066   |
+
+### Finetuned PubMedBERT Model on augmented and balanced data (Text-based):
+
+| Task               | F1-Score |
+|--------------------|----------|
+| hazard-category    | 0.9566   |
+| product-category   | 0.9393   |
+| hazard             | 0.8370   |
+| product            | 0.5500   |
 
 The submission file associated with this augmented training approach was **Augmented_Submission_Model_Finetuned_PubMedBERT_PDS_A2_Food_Hazard_Detection.ipynb**. The leaderboard scores for this submission were:
 
-- **ST1:** 0.6870518521 (`submission_augmented_train_set_finetunedPUBMEDBERT.zip`) on 11/20/2024 at 17:27:18
-- **ST2:** 0.0 (`submission_finetuned_PubMedBERT.zip`) on 11/20/2024 at 17:41:21
+- **ST1:** 0.6876231681 (`AnB Data Finetuned PubMedBERT.zip`) on 11/23/2024 at 23:11:21
+- **ST2:** 0.0 (`AnB Data Finetuned PubMedBERT.zip`) on 11/23/2024 at 23:03:11
 
-Despite the data augmentation efforts, there was no significant improvement in the competition leaderboard scores. For instance, ST1 achieved a score of **0.6870518521**, and the ST2 submission showed discrepancies, with the leaderboard reflecting an approximate score of **0.35**. This suggests that data augmentation did not substantially address the overfitting issue or enhance generalization performance in the competition context. Further investigation and alternative approaches may be required to improve model performance. 
+Despite the data augmentation efforts, there was no significant improvement in the competition leaderboard scores. For instance, ST1 achieved a score of **6876231681**, and the ST2 submission showed discrepancies, with the leaderboard reflecting an approximate score of **0.35**. This suggests that data augmentation did not substantially address the overfitting issue or enhance generalization performance in the competition context. Further investigation and alternative approaches may be required to improve model performance. 
 
 # Explanation for Model Performance Despite Augmented Dataset
 
@@ -215,7 +214,9 @@ I am trying to explain why the augmented dataset did not improve the model's per
 
 1. **Nature of Augmentation**: The augmentation techniques I applied might not have introduced enough diversity or complexity in the data. This could mean the model didn't get new, meaningful examples to improve its ability to generalize.
 
-2. **Overfitting**: Despite using an augmented dataset, the model might still be overfitting to both the original and augmented data. If the augmented data is too similar to the original, the model may memorize patterns rather than learning to generalize, leading to poor performance on unseen data.
+2. **Overfitting**: Despite using an augmented dataset with back translation and over/under sampling, the model might still was overfitting to both the original and augmented data. 
+
+**An assumption is that the augmented data is too similar to the original, the model may memorize patterns rather than learning to generalize, leading to poor performance on unseen data.**
 
 
 # Conclusion
