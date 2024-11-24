@@ -155,7 +155,7 @@ Retrain using the submission notebooks to create final submissions for competiti
 
 
 # Competition Results for Subtask 1 (Hazard-category, Product-category)
-
+Leaderboard: https://codalab.lisn.upsaclay.fr/competitions/19955#results
 The following shows the results for hazard-category and product-category tasks for Subtask 1:
 
 | Submission File                         | Score         | Status   | 
