@@ -42,7 +42,7 @@ The following files are included in the repository:
 ### Submission Notebooks
 
 - **[Submission Model Finetuned PubMedBERT PDS A2 Food Hazard Detection.ipynb]**  
-  Submission notebook for a model finetuned on the **initial training set** using PubMedBERT.
+  Submission notebook for a model finetuned with moree methods on the **initial training set** using PubMedBERT.
 
 - **[Submission Model LGBM PDS A2 Food Hazard Detection.ipynb]**  
   Submission notebook for LightGBM models trained on the **initial training set**.
@@ -162,16 +162,22 @@ The following shows the results for hazard-category and product-category tasks f
 
 | Submission File                         | Score         | Status   | 
 |-----------------------------------------|---------------|----------|
-| submission_finetuned_PubMedBERT.zip	    | 0.6992400644  | Finished | 
+| submission_finetuned_PubMedBERT.zip	    | 0.7060245426  | Finished | 
 | AnB Data Finetuned PubMedBERT.zip       | 0.6876231681  | Finished | 
 | submission.zip (LGBM)                   | 0.6428057851  | Finished | 
+
+**While the submission notebook introduces notable improvements in training methodology and evaluation fairness, these refinements result in only marginal performance gains in the Codalab contest compared to the benchmarks. This highlights potential limitations of the changes in highly constrained or competitive settings.**
+
+
+
+
 
 
 # Competition Results for Subtask 2 (Hazard, Product)
 
 The following shows the results for hazard and product tasks for Subtask 1:
 
-***But the rating shows for Sub Task 2 a score of 0.3313 for submission_finetuned_PubMedBERT.zip ***
+***But the rating shows for Sub Task 2 a score of 0.3207  for submission_finetuned_PubMedBERT.zip ***
 
 
 | Submission File                         | Score         | Status   | 
