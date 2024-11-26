@@ -42,7 +42,7 @@ The following files are included in the repository:
 ### Submission Notebooks
 
 - **[Submission Model Finetuned PubMedBERT PDS A2 Food Hazard Detection.ipynb]**  
-  Submission notebook for a model finetuned with moree methods on the **initial training set** using PubMedBERT.
+  Submission notebook for a model finetuned with more methods (eg early stopping, weighted crossentropy loss) on the **initial training set** using PubMedBERT.
 
 - **[Submission Model LGBM PDS A2 Food Hazard Detection.ipynb]**  
   Submission notebook for LightGBM models trained on the **initial training set**.
