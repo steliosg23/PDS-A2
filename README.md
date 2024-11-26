@@ -28,27 +28,32 @@ This repository contains the solution for the **Food Hazard Detection Challenge*
 
 The following files are included in the repository:
 
-### Benchmarks Notebooks
-
-- **[Benchmark Models Finetuned PubMedBERT PDS A2 Food Hazard Detection.ipynb]**  
-  Notebook for running and evaluating benchmark models using PubMedBERT with the **initial training set**.
-
-- **[Benchmark Models LGBM PDS A2 Food Hazard Detection.ipynb]**  
-  Notebook for experimenting with LightGBM models for food hazard detection using the **initial training set**.
-
-- **[AnB_Benchmark_PubMedBERT.ipynb]**  
-  Notebook for evaluating benchmark models using an **augmented training set** with PubMedBERT.
-
 ### Submission Notebooks
 
 - **[Submission Model Finetuned PubMedBERT PDS A2 Food Hazard Detection.ipynb]**  
   Submission notebook for a model finetuned with more methods (eg early stopping, weighted crossentropy loss) on the **initial training set** using PubMedBERT.
+  The model was initiated from the benchmark model and is developed further in order to make the best submission possible for the **Food Hazard Detection Challenge**.
 
 - **[Submission Model LGBM PDS A2 Food Hazard Detection.ipynb]**  
   Submission notebook for LightGBM models trained on the **initial training set**.
 
 - **[AnB_Submission_PubMedBERT.ipynb]**  
   Submission notebook for a model finetuned on an **augmented training set** using PubMedBERT.
+
+
+### Benchmarks Notebooks
+
+- **[Benchmark Models Finetuned PubMedBERT PDS A2 Food Hazard Detection.ipynb]**  
+  Notebook for running and evaluating benchmark models using PubMedBERT with the **initial training set**.
+  The specific version is actually a simplified version in order to investigate the influence of title or text
+  as main text feature, in the classification task. The submission model is much more advance fro the scope of techniques in finetuning.
+  
+- **[Benchmark Models LGBM PDS A2 Food Hazard Detection.ipynb]**  
+  Notebook for experimenting with LightGBM models for food hazard detection using the **initial training set**.
+
+- **[AnB_Benchmark_PubMedBERT.ipynb]**  
+  Notebook for evaluating benchmark models using an **augmented training set** with PubMedBERT.
+
 
 ### Extra Notebooks
 - **[EDA Notebook PDS A2 Food Hazard Detection.ipynb]**  
