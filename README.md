@@ -177,7 +177,7 @@ The following shows the results for hazard-category and product-category tasks f
 
 The following shows the results for hazard and product tasks for Subtask 1:
 
-***But the rating shows for Sub Task 2 a score of 0.3207  for submission_finetuned_PubMedBERT.zip ***
+***But the rating shows for Sub Task 2 a score of 0.3207  for submission_finetuned_PubMedBERT.zip***
 
 
 | Submission File                         | Score         | Status   | 
