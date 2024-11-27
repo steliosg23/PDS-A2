@@ -104,7 +104,18 @@ Retrain using the submission notebooks to create final submissions for competiti
 - **For LightGBM**: Run `SUBMISSION LGBM PDS A2 Food Hazard Detection .ipynb`.
 - **Finetuned PubMedBERT on Augmented and Balanced Dataset**: Run `AnB_Submission_PubMedBERT.ipynb`.
 
-## Results
+## Benchmark Results
+
+Benchmark Result have to do with the first versions of 
+each model Basic and Advanced, due to computational limitations 
+the benchmarks could not be repeated for every optimised version
+of each Model. Therefore, Benchmarks actually give a guideline on how to proceed
+with title or text as features and adopt good metrics.
+
+** Any other optimised version especially for Finetuning Bert Models
+is only investigated on submission level.Therefore the rraining is based on conclusions
+from initial Benchmark models as a forst guideline.**
+
 
 ### Finetuned PubMedBERT Model on initial Data (Title-based):
 | Task                        | F1-Score |
