@@ -112,7 +112,7 @@ the benchmarks could not be repeated for every optimised version
 of each Model. Therefore, Benchmarks actually give a guideline on how to proceed
 with title or text as features and adopt good metrics.
 
-** Any other optimised version especially for Finetuning Bert Models
+**Any other optimised version especially for Finetuning Bert Models
 is only investigated on submission level.Therefore the rraining is based on conclusions
 from initial Benchmark models as a forst guideline.**
 
