@@ -12,7 +12,7 @@ The idea of using pretrained BERT models for this project originated from my MEn
 
 ### Project Workflow:
 1. **Exploratory Data Analysis (EDA)**: Data cleaning, exploration, and visualization.
-2. **Modeling**: Two different approaches are used for classification:
+2. **Modeling**: Three different approaches are used for classification:
    - **Finetuned BioBERT**: While pretrained on different biomedical corpora, the model is now Fine-tuned on the dataset to classify food hazard-related texts.
    - **Finetuned PubMedBERT**: Model was pretrained on large PubMed abstracts, and is now Fine-tuned on the dataset to classify food hazard-related texts.
    - **LightGBM**: A gradient boosting model for classification based on features derived from the data.
@@ -34,7 +34,7 @@ The following files are included in the repository:
 
 ### Submission Notebooks
 
-This notebooks constitute the main notebooks for this project.After some benchmarks regarding the use of title or text the main feature, 
+These notebooks constitute the main notebooks for this project.After some benchmarks regarding the use of title or text the main feature, 
 We train the notebook using "text" feature and the other features 'year', 'month', 'day', 'country' and after training we predict on unlabeled contest data.
 
 - **[Submission_Model_Finetuned_BioBERT_PDS_A2_Food_Hazard_Detection]**  
@@ -53,7 +53,7 @@ Pretrained model switched to BioBERT due to stacking loss issues in the product 
 
 ### Benchmarks Notebooks
 
-The specific notebooks constitute a very initial  approach of models on training in order to evaluate their performance based on which text feature thet use ("title" or "text"). 
+These specific notebooks constitute a very initial  approach of models on training in order to evaluate their performance based on which text feature thet use ("title" or "text"). 
 
 - **[Benchmark Models Finetuned PubMedBERT PDS A2 Food Hazard Detection.ipynb]**  
   Notebook for running and evaluating benchmark models using PubMedBERT with the **initial training set**.
@@ -64,12 +64,12 @@ The specific notebooks constitute a very initial  approach of models on training
   Notebook for experimenting with LightGBM models for food hazard detection using the **initial training set**.
 
 - **[AnB_Benchmark_PubMedBERT.ipynb]**  
-  Notebook for evaluating benchmark models using an **augmented training set** with PubMedBERT.
+  Notebook for evaluating benchmark models using an **augmented training set** with PubMedBERT.After indications of overfitting the specific method is excluded as possible optimization solution.
 
 
 ### Extra Notebooks
 - **[EDA Notebook PDS A2 Food Hazard Detection.ipynb]**  
-  Notebook for performing Exploratory Data Analysis (EDA) on the **initial training set**.
+  Notebook for performing Exploratory Data Analysis (EDA) on the **initial training set** cocluded to evidence of extremely imbalanced classes.
 
 - **[data_augmentation.ipynb]**  
   Notebook for applying data augmentation using back translation to incident descriptions and titles, oversampling and undersampling , creating an **augmented training set** for imbalanced classes especially in categories of ```hazard``` and ```product```.
