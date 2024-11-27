@@ -6,7 +6,7 @@
 This repository contains the solution for the **Food Hazard Detection Challenge**. The challenge involves classifying food safety-related incidents based on short titles and long descriptions. The solution leverages both **Finetuned Pretrained Bert Models** and **LightGBM (LGBM)** models for classification into hazard-category, product-category, hazard, and product classifications.
 
 **Disclaimer:**
-The idea of using pretrained BERT models for this project originated from my MEng thesis titled "Creation of Datasets Using Biological Databases and Application of Machine Learning Algorithms to Them." The thesis focused on a comparative study of pretrained BERT models in correlating genes and metabolites within medical literature. This experience provided the foundation for applying BERT-based models to the Food Hazard Detection Challenge, leading to the decision to switch from PubMedBERT to BioBERT due to the stacking loss observed in the product class.
+The idea of using pretrained BERT models for this project originated from my MEng thesis titled "Creation of Datasets Using Biological Databases and Application of Machine Learning Algorithms to Them." The thesis focused on a comparative study of pretrained BERT models in correlating genes and metabolites within medical literature. This experience provided the foundation for applying BERT-based models to the Food Hazard Detection Challenge, leading to the decision to switch from PubMedBERT to BioBERT due to the stacking loss observed in the product class. This change led to extremeley lower loss values for all classes which means better generalization. This is also enhance by the best submission results in the whole project  0.74 Macro F1  for Hazard-category, Product-category and 0.47 Macro F1 for Hazard, Product.
 
 ## Overview
 
@@ -37,7 +37,7 @@ This notebooks constitute the main notebooks for this project.After some benchma
 We train the notebook using "text" feature and the other features 'year', 'month', 'day', 'country' and after training we predict on unlabeled contest data.
 
 - **[Submission_Model_Finetuned_BioBERT_PDS_A2_Food_Hazard_Detection]**  
-Pretrained model switched to BioBERT due to stacking loss issues in the product class. BioBERT, which is specifically designed for biomedical text, provided better results by addressing these issues more effectively. The model was further refined using methods like early stopping and weighted cross-entropy loss to optimize performance, ultimately aiming to deliver the best possible submission for the Food Hazard Detection Challenge.
+Pretrained model switched to BioBERT due to stacking loss issues in the product class. BioBERT, which is specifically designed for biomedical text, provided better results by addressing these issues more effectively. The model was trained on **intial training set** and was further refined using methods like early stopping and weighted cross-entropy loss to optimize performance, ultimately aiming to deliver the best possible submission for the Food Hazard Detection Challenge.
   
 - **[Submission Model Finetuned PubMedBERT PDS A2 Food Hazard Detection.ipynb]**  
   Submission notebook for a model finetuned with more methods (eg early stopping, weighted crossentropy loss) on the **initial training set** using PubMedBERT.
