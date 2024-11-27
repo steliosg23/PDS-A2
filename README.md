@@ -30,6 +30,12 @@ The following files are included in the repository:
 
 ### Submission Notebooks
 
+This notebooks constitute the main notebooks for this project.After some benchmarks regarding the use of title or text the main feature, 
+We train the notebook using "text" feature and the other features 'year', 'month', 'day', 'country' and after training we predict on unlabeled contest data.
+
+- **[Submission_Model_Finetuned_BioBERT_PDS_A2_Food_Hazard_Detection]**  
+Pretrained model switched to BioBERT due to stacking loss issues in the product class. BioBERT, which is specifically designed for biomedical text, provided better results by addressing these issues more effectively. The model was further refined using methods like early stopping and weighted cross-entropy loss to optimize performance, ultimately aiming to deliver the best possible submission for the Food Hazard Detection Challenge.
+  
 - **[Submission Model Finetuned PubMedBERT PDS A2 Food Hazard Detection.ipynb]**  
   Submission notebook for a model finetuned with more methods (eg early stopping, weighted crossentropy loss) on the **initial training set** using PubMedBERT.
   The model was initiated from the benchmark model and is developed further in order to make the best submission possible for the **Food Hazard Detection Challenge**.
@@ -42,6 +48,8 @@ The following files are included in the repository:
 
 
 ### Benchmarks Notebooks
+
+The specific notebooks constitute a very initial  approach of models on training in order to evaluate their performance based on which text feature thet use ("title" or "text"). 
 
 - **[Benchmark Models Finetuned PubMedBERT PDS A2 Food Hazard Detection.ipynb]**  
   Notebook for running and evaluating benchmark models using PubMedBERT with the **initial training set**.
@@ -104,10 +112,48 @@ Retrain using the submission notebooks to create final submissions for competiti
 - **For LightGBM**: Run `SUBMISSION LGBM PDS A2 Food Hazard Detection .ipynb`.
 - **Finetuned PubMedBERT on Augmented and Balanced Dataset**: Run `AnB_Submission_PubMedBERT.ipynb`.
 
+
+
+# Competition Results for Subtask 1 (Hazard-category, Product-category)
+
+Leaderboard: https://codalab.lisn.upsaclay.fr/competitions/19955#results
+
+The following shows the results for hazard-category and product-category tasks for Subtask 1:
+
+| Submission File                         | Score         | Status   | 
+|-----------------------------------------|---------------|----------|
+| submission_fintuned_BioBERT.zip	    	| 0.7354298639	 | Finished | 
+| submission_finetuned_PubMedBERT v4.zip	| 0.7127662337	 | Finished | 
+| AnB Data Finetuned PubMedBERT.zip       | 0.6876231681  | Finished | 
+| submission.zip (LGBM)                   | 0.6428057851  | Finished | 
+
+**While the submission notebook introduces notable improvements in training methodology and evaluation fairness, these refinements result in only marginal performance gains in the Codalab contest compared to the benchmarks.**
+
+
+# Competition Results for Subtask 2 (Hazard, Product)
+
+The following shows the results for hazard and product tasks for Subtask 1:
+
+***Rating shows for Sub Task 2 a score of 0.4755  for submission_fintuned_BioBERT.zip***
+***Rating shows for Sub Task 2 a score of 0.3376 for submission_finetuned_PubMedBERT v4.zip***
+
+
+| Submission File                         | Score         | Status   | 
+|-----------------------------------------|---------------|----------|
+| submission_fintuned_BioBERT.zip         | 0.00000       | Finished |
+| submission_finetuned_PubMedBERT v4.zip  | 0.00000       | Finished |
+| AnB Data Finetuned PubMedBERT.zip	      | 0.00000       | Finished | 
+| submission.zip (LGBM)                   | 0.00000       | Finished | 
+
+
+
+
+
+
 ## Benchmark Results
 
 Benchmark Result have to do with the first versions of 
-each model Basic and Advanced, due to computational limitations 
+each model Basic and Advanced, due to computational limitations, 
 the benchmarks could not be repeated for every optimised version
 of each Model. Therefore, Benchmarks actually give a guideline on how to proceed
 with title or text as features and adopt good metrics.
@@ -169,41 +215,7 @@ from initial Benchmark models as a forst guideline.**
 
 
 
-
-# Competition Results for Subtask 1 (Hazard-category, Product-category)
-
-Leaderboard: https://codalab.lisn.upsaclay.fr/competitions/19955#results
-
-The following shows the results for hazard-category and product-category tasks for Subtask 1:
-
-| Submission File                         | Score         | Status   | 
-|-----------------------------------------|---------------|----------|
-| submission_finetuned_PubMedBERT v4.zip	| 0.7127662337	| Finished | 
-| AnB Data Finetuned PubMedBERT.zip       | 0.6876231681  | Finished | 
-| submission.zip (LGBM)                   | 0.6428057851  | Finished | 
-
-**While the submission notebook introduces notable improvements in training methodology and evaluation fairness, these refinements result in only marginal performance gains in the Codalab contest compared to the benchmarks.**
-
-
-
-
-
-
-# Competition Results for Subtask 2 (Hazard, Product)
-
-The following shows the results for hazard and product tasks for Subtask 1:
-
-***But the rating shows for Sub Task 2 a score of 0.3376 for submission_finetuned_PubMedBERT v4.zip***
-
-
-| Submission File                         | Score         | Status   | 
-|-----------------------------------------|---------------|----------|
-| submission_finetuned_PubMedBERT v4.zip  | 0.00000       | Finished |
-| AnB Data Finetuned PubMedBERT.zip	      | 0.00000       | Finished | 
-| submission.zip (LGBM)                   | 0.00000       | Finished | 
-
-
-# Overfitting Indications from Competition Results
+# Overfitting Indications in some experiments from Competition Results
 
 The competition results suggest potential overfitting in the models. The scores for the `submission_finetuned_PubMedBERT.zip` and `AnB Data Finetuned PubMedBERT.zip` file were significantly higher for the training set compared to the test set, which may indicate that the model is overfitting to the training data. To mitigate this, I attempted data augmentation in the **data_augmentation.ipynb** file. The benchmark results using the augmented training data are as follows:
 
