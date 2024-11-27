@@ -167,7 +167,7 @@ The following shows the results for hazard-category and product-category tasks f
 
 | Submission File                         | Score         | Status   | 
 |-----------------------------------------|---------------|----------|
-| submission_finetuned_PubMedBERT.zip	    | 0.7127662337	| Finished | 
+| submission_finetuned_PubMedBERT v4.zip	| 0.7127662337	| Finished | 
 | AnB Data Finetuned PubMedBERT.zip       | 0.6876231681  | Finished | 
 | submission.zip (LGBM)                   | 0.6428057851  | Finished | 
 
