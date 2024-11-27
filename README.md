@@ -39,7 +39,7 @@ These notebooks constitute the main notebooks for this project.After some benchm
 We train the notebook using "text" feature and the other features 'year', 'month', 'day', 'country' and after training we predict on unlabeled contest data.
 
 - **[Submission_Model_Finetuned_BioBERT_PDS_A2_Food_Hazard_Detection]**  
-Pretrained model switched to BioBERT due to stacking loss issues in the product class. BioBERT, which is specifically designed for biomedical text, provided better results by addressing these issues more effectively. The model was trained on **intial training set** and was further refined using methods like early stopping and weighted cross-entropy loss to optimize performance, ultimately aiming to deliver the best possible submission for the Food Hazard Detection Challenge.
+Pretrained model switched to BioBERT due to stacking loss issues in the product class. BioBERT, which is specifically designed for biomedical text, provided better results by addressing these issues more effectively. The model was trained on **intial training set** and was further refined using methods like early stopping and learning rate scheduler to optimize performance, ultimately aiming to deliver the best possible submission for the Food Hazard Detection Challenge.
   
 - **[Submission Model Finetuned PubMedBERT PDS A2 Food Hazard Detection.ipynb]**  
   Submission notebook for a model finetuned with more methods (eg early stopping, weighted crossentropy loss) on the **initial training set** using PubMedBERT.
