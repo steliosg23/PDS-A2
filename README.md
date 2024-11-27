@@ -6,7 +6,7 @@
 This repository contains the solution for the **Food Hazard Detection Challenge**. The challenge involves classifying food safety-related incidents based on short titles and long descriptions. The solution leverages both **Finetuned Pretrained Bert Models** and **LightGBM (LGBM)** models for classification into hazard-category, product-category, hazard, and product classifications.
 
 **Disclaimer:**
-The idea of using pretrained BERT models for this project originated from my MEng thesis titled "Creation of Datasets Using Biological Databases and Application of Machine Learning Algorithms to Them." The thesis focused on a comparative study of pretrained BERT models in correlating genes and metabolites within medical literature. This experience provided the foundation for applying BERT-based models to the Food Hazard Detection Challenge, leading to the decision to switch from PubMedBERT to BioBERT due to the stacking loss observed in the product class. This change led to extremeley lower loss values for all classes which means better generalization. This is also enhance by the best submission results in the whole project  0.74 Macro F1  for Hazard-category, Product-category and 0.47 Macro F1 for Hazard, Product.
+The idea of using pretrained BERT models for this project originated from my MEng thesis in Democritus University of Thrace titled "Creation of Datasets Using Biological Databases and Application of Machine Learning Algorithms to Them." The thesis focused on a comparative study of pretrained BERT models in correlating genes and metabolites within medical literature. This experience provided the foundation for applying BERT-based models to the Food Hazard Detection Challenge, leading to the decision to switch from PubMedBERT to BioBERT due to the stacking loss observed in the product class. This change led to extremeley lower loss values for all classes which means better generalization. This is also enhance by the best submission results in the whole project  0.74 Macro F1  for Hazard-category, Product-category and 0.47 Macro F1 for Hazard, Product.
 
 ## Overview
 
@@ -138,8 +138,9 @@ The following shows the results for hazard-category and product-category tasks f
 
 The following shows the results for hazard and product tasks for Subtask 1:
 
-***Rating shows for Sub Task 2 a score of 0.4755  for submission_fintuned_BioBERT.zip***
-***Rating shows for Sub Task 2 a score of 0.3376 for submission_finetuned_PubMedBERT v4.zip***
+- ***Rating shows for Sub Task 2 a score of 0.4755  for submission_fintuned_BioBERT.zip***
+
+- ***Rating shows for Sub Task 2 a score of 0.3376 for submission_finetuned_PubMedBERT v4.zip***
 
 
 | Submission File                         | Score         | Status   | 
@@ -156,15 +157,10 @@ The following shows the results for hazard and product tasks for Subtask 1:
 
 ## Benchmark Results
 
-Benchmark Result have to do with the first versions of 
-each model Basic and Advanced, due to computational limitations, 
-the benchmarks could not be repeated for every optimised version
-of each Model. Therefore, Benchmarks actually give a guideline on how to proceed
-with title or text as features and adopt good metrics.
+Benchmark results are based on the initial versions of each model—Basic and Advanced—due to computational limitations preventing the repetition of benchmarks for every optimized version. As such, these benchmarks serve as a guideline for selecting features (such as titles or text) and adopting appropriate metrics moving forward.
 
-**Any other optimised version especially for Finetuning Bert Models
-is only investigated on submission level.Therefore their training is based on conclusions
-from initial Benchmark models as a forst guideline.**
+**Any other optimized versions, particularly for fine-tuning BERT models, have only been explored at the submission level. Therefore, their training is based on the conclusions drawn from the initial benchmark models as a preliminary guideline.**
+
 
 
 ### Finetuned PubMedBERT Model on initial Data (Title-based):
