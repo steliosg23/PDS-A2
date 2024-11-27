@@ -171,7 +171,7 @@ The following shows the results for hazard-category and product-category tasks f
 | AnB Data Finetuned PubMedBERT.zip       | 0.6876231681  | Finished | 
 | submission.zip (LGBM)                   | 0.6428057851  | Finished | 
 
-**While the submission notebook introduces notable improvements in training methodology and evaluation fairness, these refinements result in only marginal performance gains in the Codalab contest compared to the benchmarks. This highlights potential limitations of the changes in highly constrained or competitive settings.**
+**While the submission notebook introduces notable improvements in training methodology and evaluation fairness, these refinements result in only marginal performance gains in the Codalab contest compared to the benchmarks.**
 
 
 
