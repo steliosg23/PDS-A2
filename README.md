@@ -78,7 +78,7 @@ These specific notebooks represent an initial approach to training models, aimed
   Notebook for applying data augmentation using back translation to incident descriptions and titles, oversampling and undersampling , creating an **augmented training set** for imbalanced classes especially in categories of ```hazard``` and ```product```.
 
 ---
-## Requirements
+## ℹ️ Requirements
 Make sure to install the required dependencies before running the code. You can use the following pip command to install the necessary packages:
 ```bash
 pip install torch lightgbm pandas scikit-learn matplotlib tqdm transformers nltk numpy
