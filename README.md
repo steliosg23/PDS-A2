@@ -182,12 +182,12 @@ The following shows the results for hazard-category and product-category tasks f
 
 The following shows the results for hazard and product tasks for Subtask 1:
 
-***But the rating shows for Sub Task 2 a score of 0.3207  for submission_finetuned_PubMedBERT.zip***
+***But the rating shows for Sub Task 2 a score of 0.3376   for submission_finetuned_PubMedBERT.zip***
 
 
 | Submission File                         | Score         | Status   | 
 |-----------------------------------------|---------------|----------|
-| submission_finetuned_PubMedBERT.zip     | 0.00000       | Finished |
+| submission_finetuned_PubMedBERT v4.zip  | 0.00000       | Finished |
 | AnB Data Finetuned PubMedBERT.zip	      | 0.00000       | Finished | 
 | submission.zip (LGBM)                   | 0.00000       | Finished | 
 
