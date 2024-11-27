@@ -83,17 +83,6 @@ Make sure to install the required dependencies before running the code. You can 
 ```bash
 pip install torch lightgbm pandas scikit-learn matplotlib tqdm transformers nltk numpy
 ```
-### Additional Libraries:
-- **pandas**
-- **re**
-- **nltk**
-- **scikit-learn**
-- **torch**
-- **transformers**
-- **lightgbm**
-- **matplotlib**
-- **numpy**
-
 ---
 ## ℹ️ How to Re-run the Solution
 
