@@ -3,7 +3,10 @@
 ## Stylianos Giagkos f3352410
 # Food Hazard Detection Challenge 
 
-This repository contains the solution for the **Food Hazard Detection Challenge**. The challenge involves classifying food safety-related incidents based on short titles and long descriptions. The solution leverages both **Finetuned PubMedBERT** and **LightGBM (LGBM)** models for classification into hazard-category, product-category, hazard, and product classifications.
+This repository contains the solution for the **Food Hazard Detection Challenge**. The challenge involves classifying food safety-related incidents based on short titles and long descriptions. The solution leverages both **Finetuned Pretrained Bert Models** and **LightGBM (LGBM)** models for classification into hazard-category, product-category, hazard, and product classifications.
+
+**Disclaimer:**
+The idea of using pretrained BERT models for this project originated from my MEng thesis titled "Creation of Datasets Using Biological Databases and Application of Machine Learning Algorithms to Them." The thesis focused on a comparative study of pretrained BERT models in correlating genes and metabolites within medical literature. This experience provided the foundation for applying BERT-based models to the Food Hazard Detection Challenge, leading to the decision to switch from PubMedBERT to BioBERT due to the stacking loss observed in the product class.
 
 ## Overview
 
