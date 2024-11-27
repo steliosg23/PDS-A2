@@ -132,7 +132,7 @@ The following shows the results for hazard-category and product-category tasks f
 
 | Submission File                         | Score         | Status   | 
 |-----------------------------------------|---------------|----------|
-| submission_fintuned_BioBERT.zip	    	| 0.7354298639	 | Finished | 
+| ✅ submission_fintuned_BioBERT.zip	   | 0.7354298639	 | Finished | 
 | submission_finetuned_PubMedBERT v4.zip	| 0.7127662337	 | Finished | 
 | AnB Data Finetuned PubMedBERT.zip       | 0.6876231681  | Finished | 
 | submission.zip (LGBM)                   | 0.6428057851  | Finished | 
@@ -144,14 +144,14 @@ The following shows the results for hazard-category and product-category tasks f
 
 The following shows the results for hazard and product tasks for Subtask 1:
 
-- ***Rating shows for Sub Task 2 a score of 0.4755  for submission_fintuned_BioBERT.zip***
+- ✅ ***Rating shows for Sub Task 2 a score of 0.4755  for submission_fintuned_BioBERT.zip*** 
 
 - ***Rating shows for Sub Task 2 a score of 0.3376 for submission_finetuned_PubMedBERT v4.zip***
 
 
 | Submission File                         | Score         | Status   | 
 |-----------------------------------------|---------------|----------|
-| submission_fintuned_BioBERT.zip         | 0.00000       | Finished |
+| ✅submission_fintuned_BioBERT.zip       | 0.00000       | Finished |
 | submission_finetuned_PubMedBERT v4.zip  | 0.00000       | Finished |
 | AnB Data Finetuned PubMedBERT.zip	      | 0.00000       | Finished | 
 | submission.zip (LGBM)                   | 0.00000       | Finished | 
@@ -163,7 +163,7 @@ The following shows the results for hazard and product tasks for Subtask 1:
 ---
 ## ℹ️ Benchmark Results
 
-Benchmark results are based on the initial versions of each model—Basic and Advanced—due to computational limitations preventing the repetition of benchmarks for every optimized version. As such, these benchmarks serve as a guideline for selecting features (such as titles or text) and adopting appropriate metrics moving forward.
+Benchmark results are based on the initial versions of each model—Basic and Advanced—due to computational limitations preventing the repetition of benchmarks for every optimized version. As such, these benchmarks serve as a guideline for selecting features (such as titles or text) and adopting appropriate metrics moving forward. These initial results led to a focus on the **text** feature, as it consistently produced better performance across various models, particularly in the classification tasks. Additionally, the **text** feature provided more comprehensive information for the BERT models, leading to improved classification results.
 
 **Any other optimized versions, particularly for fine-tuning BERT models, have only been explored at the submission level. Therefore, their training is based on the conclusions drawn from the initial benchmark models as a preliminary guideline.**
 
