@@ -1,15 +1,17 @@
 # Master in Data Science AUEB 2024-2025
-## Practical Data Science - Assignment 2
-## Stylianos Giagkos f3352410
-# Food Hazard Detection Challenge 
+# SemEval 2025 Task 9 - The Food Hazard Detection Challenge
+### Practical Data Science - Assignment 2
+### Stylianos Giagkos f3352410
 
+---
 This repository contains the solution for the **Food Hazard Detection Challenge**. The challenge involves classifying food safety-related incidents based on short titles and long descriptions. The solution leverages both **Finetuned Pretrained Bert Models** and **LightGBM (LGBM)** models for classification into hazard-category, product-category, hazard, and product classifications.
 
-**Disclaimer:**
+### **Disclaimer:**
 
 The use of pretrained BERT models in this project stems from my MEng thesis at Democritus University of Thrace, titled "Creation of Datasets Using Biological Databases and Application of Machine Learning Algorithms to Them." The thesis focused on a comparative study of pretrained BERT models in correlating genes and metabolites within medical literature. This experience laid the groundwork for applying BERT-based models to the Food Hazard Detection Challenge, which led to the decision to switch from PubMedBERT to BioBERT due to the stacking loss observed in the product class. This change resulted in significantly lower loss values for all classes, indicating better generalization, as evidenced by the best submission results in the entire project: 0.74 Macro F1 for Hazard-category, Product-category, and 0.47 Macro F1 for Hazard, Product.
 
-## Overview
+---
+## ℹ️ Overview
 
 ### Project Workflow:
 1. **Exploratory Data Analysis (EDA)**: Data cleaning, exploration, and visualization.
@@ -21,25 +23,25 @@ The use of pretrained BERT models in this project stems from my MEng thesis at D
 5. **Training and Submission**: Generation of final predictions based on the final optimal model and submission in the required format on CodaLab competition.
 
 ### Subtasks (Performed Separately for Title and Text):
-#### Subtask 1:
+#### 🟢 Subtask 1:
 - **Classify hazard-category**: Classifies the general hazard type.
 - **Classify product-category**: Classifies the general product type.
 
-#### Subtask 2:
+#### 🟢 Subtask 2:
 - **Classify hazard**: Classifies the specific hazard type.
 - **Classify product**: Classifies the specific product type.
-
-## Repository Files Description:
+---
+## ℹ️ Repository Files Description:
 
 The following files are included in the repository:
 
-### Submission Notebooks
+### 🟢 Submission Notebooks
 
-These notebooks constitute the main notebooks for this project.After some benchmarks regarding the use of title or text the main feature, 
-We train the notebook using "text" feature and the other features 'year', 'month', 'day', 'country' and after training we predict on unlabeled contest data.
+These notebooks serve as the primary notebooks for this project. After conducting some benchmarks to evaluate the effectiveness of using the "title" versus the "text" feature as the main input, we decided to train the model using the "text" feature along with additional features such as 'year', 'month', 'day', and 'country'. Following the training, the model is used to make predictions on the unlabeled contest data.
 
-- **[Submission_Model_Finetuned_BioBERT_PDS_A2_Food_Hazard_Detection]**  
-Pretrained model switched to BioBERT due to stacking loss issues in the product class. BioBERT, which is specifically designed for biomedical text, provided better results by addressing these issues more effectively. The model was trained on **intial training set** and was further refined using methods like early stopping and learning rate scheduler to optimize performance, ultimately aiming to deliver the best possible submission for the Food Hazard Detection Challenge.
+- ✅ **[Submission_Model_Finetuned_BioBERT_PDS_A2_Food_Hazard_Detection] -- Best performing model --**
+  
+     Pretrained model switched to BioBERT due to stacking loss issues in the product class. BioBERT, which is specifically designed for biomedical text, provided better results by addressing these issues more effectively. The model was trained on **intial training set** and was further refined using methods like early stopping and learning rate scheduler to optimize performance, ultimately aiming to deliver the best possible submission for the Food Hazard Detection Challenge.
   
 - **[Submission Model Finetuned PubMedBERT PDS A2 Food Hazard Detection.ipynb]**  
   Submission notebook for a model finetuned with more methods (eg early stopping, weighted crossentropy loss) on the **initial training set** using PubMedBERT.
@@ -52,9 +54,9 @@ Pretrained model switched to BioBERT due to stacking loss issues in the product 
   Submission notebook for a model finetuned on an **augmented training set** using PubMedBERT.
 
 
-### Benchmarks Notebooks
+### 🟢 Benchmarks Notebooks
 
-These specific notebooks constitute a very initial  approach of models on training in order to evaluate their performance based on which text feature thet use ("title" or "text"). 
+These specific notebooks represent an initial approach to training models, aimed at evaluating their performance based on the text feature they use ("title" or "text").
 
 - **[Benchmark Models Finetuned PubMedBERT PDS A2 Food Hazard Detection.ipynb]**  
   Notebook for running and evaluating benchmark models using PubMedBERT with the **initial training set**.
@@ -68,14 +70,14 @@ These specific notebooks constitute a very initial  approach of models on traini
   Notebook for evaluating benchmark models using an **augmented training set** with PubMedBERT.After indications of overfitting the specific method is excluded as possible optimization solution.
 
 
-### Extra Notebooks
+### 🟢 Extra Notebooks
 - **[EDA Notebook PDS A2 Food Hazard Detection.ipynb]**  
   Notebook for performing Exploratory Data Analysis (EDA) on the **initial training set** cocluded to evidence of extremely imbalanced classes.
 
 - **[data_augmentation.ipynb]**  
   Notebook for applying data augmentation using back translation to incident descriptions and titles, oversampling and undersampling , creating an **augmented training set** for imbalanced classes especially in categories of ```hazard``` and ```product```.
 
-
+---
 ## Requirements
 Make sure to install the required dependencies before running the code. You can use the following pip command to install the necessary packages:
 ```bash
@@ -92,32 +94,35 @@ pip install torch lightgbm pandas scikit-learn matplotlib tqdm transformers nltk
 - **matplotlib**
 - **numpy**
 
-## How to Re-run the Solution
+---
+## ℹ️ How to Re-run the Solution
 
-### Step 1: Data Preparation
+### ➡️ Step 1: Data Preparation
 Ensure that the dataset is correctly placed in the expected directory. Adjust file paths if necessary.
 
-### Step 2: Exploratory Data Analysis
+### ➡️ Step 2: Exploratory Data Analysis
 Run `EDA PDS A2 Food Hazard Detection.ipynb` to clean and visualize the data.
 
-### Step 3: Model Training
+### ➡️ Step 3: Model Benchmarks on Text or title Feature
 You can choose between:
 
 - **Finetuned PubMedBERT on initial data**: Run `BENCHMARKS Finetuned PubMedBERT PDS A2 Food Hazard Detection.ipynb`.
 - **LightGBM**: Run `BENCHMARKS LGBM PDS A2 Food Hazard Detection .ipynb`.
 - **Finetuned PubMedBERT on Augmented and Balanced Dataset**: Run `AnB_Benchmark_PubMedBERT.ipynb`.
 
-### Step 4: Model Evaluation
+### ➡️ Step 4: Model Evaluation
 Both models evaluate accuracy, precision, recall, and F1-score.
 
-### Step 5: Retraining for Submission
+### ➡️ Step 5: Retraining for Submission
 Retrain using the submission notebooks to create final submissions for competitions based on the best model of the respective benchmarks notebooks:
 
-- **For PubMedBERT on initial data**: Run `SUBMISSION Finetuned PubMedBERT PDS A2 Food Hazard Detection.ipynb`.
-- **For LightGBM**: Run `SUBMISSION LGBM PDS A2 Food Hazard Detection .ipynb`.
+- **For BioBERT on initial data**: Run `Submission Model Finetuned BioBERT PDS A2 Food Hazard Detection.ipynb`.
+- **For PubMedBERT on initial data**: Run `Submission Model Finetuned PubMedBERT PDS A2 Food Hazard Detection.ipynb`.
+- **For LightGBM**: Run `Sumission Model LGBM  PDS A2 Food Hazard Detection.ipynb`.
 - **Finetuned PubMedBERT on Augmented and Balanced Dataset**: Run `AnB_Submission_PubMedBERT.ipynb`.
 
-
+---
+## ℹ️ SemEval 2025 Task 9 - The Food Hazard Detection Challenge Results
 
 # Competition Results for Subtask 1 (Hazard-category, Product-category)
 
@@ -155,8 +160,8 @@ The following shows the results for hazard and product tasks for Subtask 1:
 
 
 
-
-## Benchmark Results
+---
+## ℹ️ Benchmark Results
 
 Benchmark results are based on the initial versions of each model—Basic and Advanced—due to computational limitations preventing the repetition of benchmarks for every optimized version. As such, these benchmarks serve as a guideline for selecting features (such as titles or text) and adopting appropriate metrics moving forward.
 
@@ -215,8 +220,8 @@ Benchmark results are based on the initial versions of each model—Basic and Ad
 | product            | 0.5500   |
 
 
-
-# Overfitting Indications in some experiments from Competition Results
+---
+## ℹ️ Overfitting Indications in some experiments from Competition Results
 
 The competition results suggest potential overfitting in the models. The scores for the `submission_finetuned_PubMedBERT.zip` and `AnB Data Finetuned PubMedBERT.zip` file were significantly higher for the training set compared to the test set, which may indicate that the model is overfitting to the training data. To mitigate this, I attempted data augmentation in the **data_augmentation.ipynb** file. The benchmark results using the augmented training data are as follows:
 
@@ -247,7 +252,7 @@ The submission file associated with this augmented training approach was **AnB_S
 
 Despite the data augmentation efforts, there was no significant improvement in the competition leaderboard scores. For instance, ST1 achieved a score of **0.6876231681**, and the ST2 submission showed discrepancies, with the leaderboard reflecting an approximate score of **0.35**. This suggests that data augmentation did not substantially address the overfitting issue or enhance generalization performance in the competition context. Further investigation and alternative approaches may be required to improve model performance. 
 
-# Explanation for Model Performance Despite Augmented Dataset
+### Explanation for Model Performance Despite Augmented Dataset
 
 I am trying to explain why the augmented dataset did not improve the model's performance in the following points:
 
@@ -257,13 +262,20 @@ I am trying to explain why the augmented dataset did not improve the model's per
 
 **An assumption is that the augmented data is too similar to the original, the model may memorize patterns rather than learning to generalize, leading to poor performance on unseen data.**
 
+----
+## ℹ️ Conclusion
+This solution for the Food Hazard Detection Challenge integrates both Finetuned BioBERT and LightGBM models to classify food safety incidents based on short titles and long descriptions. Through careful experimentation with various pretrained models and an augmented training set, the approach addresses both general and specific hazard and product classification tasks.
 
-# Conclusion
-This solution combines advanced NLP (Finetuned PubMedBERT) and traditional machine learning (LightGBM) techniques to classify food hazard data. The solution addresses both general and specific hazard and product classification tasks. Both models were trained and evaluated, with their results summarized above.The submission models are retrained based on the benchmark results to generate the final predictions.
-You can re-run the solution by following the provided instructions and reproduce the results with the corresponding datasets and models. 
+Key results include a significant performance boost from switching to BioBERT due to better handling of biomedical text and a reduction in stacking loss, leading to stronger generalization and improved Macro F1 scores. Despite efforts in data augmentation to mitigate overfitting, the model's performance on the competition leaderboard remained constrained, indicating that further refinements may be necessary. The benchmarks and results provide a clear pathway for future improvements, such as exploring more diverse augmentation strategies and refining model hyperparameters.
 
-# References:
+This repository contains all necessary files and notebooks to reproduce the results and allows for easy retraining and submission of optimized models. It serves as a comprehensive solution to the problem of food hazard classification, incorporating state-of-the-art NLP techniques and traditional machine learning models.
+
+The performance outcomes demonstrate the potential of fine-tuning pretrained models like BioBERT for domain-specific tasks and underline the importance of addressing overfitting through more innovative approaches in future iterations of the model. 
+
+---
+## ℹ️ References:
 
 - [ChatGPT](https://openai.com/chatgpt): For quick assistance, code help, debugging, and guidance on various data science topics.
 - [Stack Overflow](https://stackoverflow.com): For troubleshooting and solutions to coding challenges.
 - [ Towards Data Science](https://towardsdatascience.com) and [Medium](https://medium.com/tag/data-science): For articles and tutorials on data science techniques and best practices.
+
