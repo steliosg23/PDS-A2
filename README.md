@@ -6,7 +6,7 @@
 ---
 This repository contains the solution for the **Food Hazard Detection Challenge**. The challenge involves classifying food safety-related incidents based on short titles and long descriptions. The solution leverages both **Finetuned Pretrained Bert Models** and **LightGBM (LGBM)** models for classification into hazard-category, product-category, hazard, and product classifications.
 
-### **Disclaimer:**
+### ⬛ **Disclaimer:**
 
 The use of pretrained BERT models in this project stems from my MEng thesis at Democritus University of Thrace, titled "Creation of Datasets Using Biological Databases and Application of Machine Learning Algorithms to Them." The thesis focused on a comparative study of pretrained BERT models in correlating genes and metabolites within medical literature. This experience laid the groundwork for applying BERT-based models to the Food Hazard Detection Challenge, which led to the decision to switch from PubMedBERT to BioBERT due to the stacking loss observed in the product class. This change resulted in significantly lower loss values for all classes, indicating better generalization, as evidenced by the best submission results in the entire project: 0.74 Macro F1 for Hazard-category, Product-category, and 0.47 Macro F1 for Hazard, Product.
 
@@ -169,7 +169,8 @@ Benchmark results are based on the initial versions of each model—Basic and Ad
 
 
 
-### Finetuned PubMedBERT Model on initial Data (Title-based):
+### 🟢 Finetuned PubMedBERT Model on initial Data (Title-based):
+
 | Task                        | F1-Score |
 |-----------------------------|----------|
 | hazard-category (Title)     | 0.8288   |
@@ -177,7 +178,8 @@ Benchmark results are based on the initial versions of each model—Basic and Ad
 | hazard (Title)              | 0.5899   |
 | product (Title)             | 0.2172   |
 
-### Finetuned PubMedBERT Model on intial data (Text-based):
+### 🟢 Finetuned PubMedBERT Model on intial data (Text-based):
+
 | Task                        | F1-Score |
 |-----------------------------|----------|
 | hazard-category (Text)      | 0.9459   |
@@ -185,7 +187,8 @@ Benchmark results are based on the initial versions of each model—Basic and Ad
 | hazard (Text)               | 0.8166   |
 | product (Text)              | 0.2331   |
 
-### LightGBM Model (Title-based):
+### 🟢 LightGBM Model (Title-based):
+
 | Task                        | F1-Score |
 |-----------------------------|----------|
 | hazard-category (Title)     | 0.7614   |
@@ -193,7 +196,8 @@ Benchmark results are based on the initial versions of each model—Basic and Ad
 | hazard (Title)              | 0.5533   |
 | product (Title)             | 0.0798   |
 
-### LightGBM Model (Text-based):
+### 🟢 LightGBM Model (Text-based):
+
 | Task                        | F1-Score |
 |-----------------------------|----------|
 | hazard-category (Text)      | 0.9129   |
@@ -201,7 +205,7 @@ Benchmark results are based on the initial versions of each model—Basic and Ad
 | hazard (Text)               | 0.7671   |
 | product (Text)              | 0.0479   |
 
-### Finetuned PubMedBERT Model on augmented and balanced Data (Title-based):
+### 🟢 Finetuned PubMedBERT Model on augmented and balanced Data (Title-based):
 
 | Task               | F1-Score |
 |--------------------|----------|
@@ -210,7 +214,7 @@ Benchmark results are based on the initial versions of each model—Basic and Ad
 | hazard             | 0.8381   |
 | product            | 0.6066   |
 
-### Finetuned PubMedBERT Model on augmented and balanced data (Text-based):
+### 🟢 Finetuned PubMedBERT Model on augmented and balanced data (Text-based):
 
 | Task               | F1-Score |
 |--------------------|----------|
@@ -219,7 +223,6 @@ Benchmark results are based on the initial versions of each model—Basic and Ad
 | hazard             | 0.8370   |
 | product            | 0.5500   |
 
-
 ---
 ## ℹ️ Overfitting Indications in some experiments from Competition Results
 
@@ -227,7 +230,7 @@ The competition results suggest potential overfitting in the models. The scores 
 
 ### Collected F1-Scores for Title-Focused Classification (Augmented Data)
 
-### Finetuned PubMedBERT Model on augmented and balanced Data (Title-based):
+### 🟢 Finetuned PubMedBERT Model on augmented and balanced Data (Title-based):
 
 | Task               | F1-Score |
 |--------------------|----------|
@@ -236,7 +239,7 @@ The competition results suggest potential overfitting in the models. The scores 
 | hazard             | 0.8381   |
 | product            | 0.6066   |
 
-### Finetuned PubMedBERT Model on augmented and balanced data (Text-based):
+### 🟢 Finetuned PubMedBERT Model on augmented and balanced data (Text-based):
 
 | Task               | F1-Score |
 |--------------------|----------|
