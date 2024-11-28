@@ -175,11 +175,11 @@ The following shows the F1 Macro Scores for hazard-category and product-category
 
 | Submission File                         | Score         | Status   | 
 |-----------------------------------------|---------------|----------|
-| ✅ submission_scibert.zip	             | 0.7529242892  | Finished | 
-|  submission_fintuned_BioBERT.zip	      | 0.7354298639	 | Finished | 
-| submission_finetuned_PubMedBERT v4.zip	| 0.7127662337	 | Finished | 
-| AnB Data Finetuned PubMedBERT.zip       | 0.6876231681  | Finished | 
-| submission.zip (LGBM)                   | 0.6428057851  | Finished | 
+| ✅ submission_scibert.zip	             | 0.7529  | Finished | 
+|  submission_fintuned_BioBERT.zip	      | 0.7354	 | Finished | 
+| submission_finetuned_PubMedBERT v4.zip	| 0.7128	 | Finished | 
+| AnB Data Finetuned PubMedBERT.zip       | 0.6876  | Finished | 
+| submission.zip (LGBM)                   | 0.6428  | Finished | 
 
 **While the submission notebook introduces notable improvements in training methodology and evaluation fairness, these refinements result in only marginal performance gains in the Codalab contest compared to the benchmarks.**
 
