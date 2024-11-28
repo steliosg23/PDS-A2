@@ -5,7 +5,7 @@
 ### Stylianos Giagkos f3352410
 
 ---
-![Project Workflow](Infographic.jpg)
+![Project Workflow](Infographic.png)
 
 
 
