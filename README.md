@@ -17,6 +17,27 @@ This repository contains the solution for the **Food Hazard Detection Challenge*
 The use of pretrained BERT models in this project stems from my **MEng thesis** at Democritus University of Thrace, titled **"Creation of Datasets Using Biological Databases and Application of Machine Learning Algorithms to Them."** .The thesis focused on a comparative study of **pretrained BERT** models in correlating genes and metabolites within medical literature. This experience laid the groundwork for applying BERT-based models to the Food Hazard Detection Challenge, which led to the decision to switch from PubMedBERT to **SciBERT** and  **BioBERT** due to the stacking loss observed in the product class. This change resulted in significantly lower loss values for all classes, indicating better generalization, as evidenced by the best submission results in the entire project: **0.75 Macro F1** for Hazard-category, Product-category, and **0.47 Macro F1** for Hazard, Product.
 
 ---
+## ℹ️ Systems methodology
+
+#### 🟢 Advanced Model Method : Fine-tuning Pretrained BERT Models
+
+This method involves a two-step process:
+1. **Pretraining**: BERT models like PubMedBERT, SciBERT, or BioBERT are pretrained on large corpora using the masked language modeling objective. This helps the model learn contextual embeddings by predicting missing words in sentences.
+2. **Fine-tuning**: The pretrained model is then fine-tuned on domain-specific data, such as food hazard datasets. A classifier is added on top of BERT to adapt it for specific tasks, like hazard-category or product-category classification. During this stage, both the classifier and BERT layers are updated to optimize task-specific performance.
+
+![Fine-tuning Pretrained BERT Models](Finetuning schema.png)
+
+
+#### 🟢 Basic Model Method : LightGBM
+
+LightGBM is a gradient-boosting framework based on decision trees:
+- It builds trees sequentially, where each tree attempts to correct the errors made by the previous ones.
+- The framework uses histogram-based computation and a leaf-wise growth strategy to optimize training speed and memory usage.
+- By focusing on minimizing residuals and aggregating predictions across all trees, LightGBM achieves high accuracy and efficiency, making it suitable for large-scale classification problems.
+
+
+
+---
 ## ℹ️ Overview
 
 ### Project Workflow:
