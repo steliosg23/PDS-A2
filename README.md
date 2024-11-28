@@ -39,12 +39,18 @@ The following files are included in the repository:
 
 These notebooks serve as the primary notebooks for this project. After conducting some benchmarks to evaluate the effectiveness of using the "title" versus the "text" feature as the main input, we decided to train the model using the "text" feature along with additional features such as 'year', 'month', 'day', and 'country'. Following the training, the model is used to make predictions on the unlabeled contest data.
 
-- ✅ **[Submission_Model_Finetuned_BioBERT_PDS_A2_Food_Hazard_Detection] -- Best performing model --**
+- ✅ **[Submission_Model_Finetuned_SciBERT_PDS_A2_Food_Hazard_Detection.ipynb] -- Best performing model for Sub Task 1 Hazard-Caterogry, Product-Category--**
+  Sub Task1 : Macro F1: 75%
   
-     Pretrained model switched to BioBERT due to stacking loss issues in the product class. BioBERT, which is specifically designed for biomedical text, provided better results by addressing these issues more effectively. The model was trained on **intial training set** and was further refined using methods like early stopping and learning rate scheduler to optimize performance, ultimately aiming to deliver the best possible submission for the Food Hazard Detection Challenge.
+  Pretrained model switched to SciBERT due to stacking loss issues in the product class. BioBERT, which is specifically designed for biomedical text, provided better results by addressing these issues more effectively. The model was trained on **intial training set** and was further refined using methods like early stopping and learning rate scheduler to optimize performance, ultimately aiming to deliver the best possible submission for the Food Hazard Detection Challenge.
+
+- ✅ **[Submission_Model_Finetuned_BioBERT_PDS_A2_Food_Hazard_Detection.ipynb] -- Best performing model for Sub Task 2 Hazard, Product--**
+  
+  Sub Task 2:Macro F1: 47%
+  Pretrained model switched to BioBERT due to stacking loss issues in the product class. BioBERT, which is specifically designed for biomedical text, provided better results by addressing these issues more effectively. The model was trained on **intial training set** and was further refined using methods like early stopping and learning rate scheduler to optimize performance, ultimately aiming to deliver the best possible submission for the Food Hazard Detection Challenge.
   
 - **[Submission Model Finetuned PubMedBERT PDS A2 Food Hazard Detection.ipynb]**  
-  Submission notebook for a model finetuned with more methods (eg early stopping, weighted crossentropy loss) on the **initial training set** using PubMedBERT.
+  Submission notebook for a model finetuned with more methods (eg early stopping, learning rate scheduler) on the **initial training set** using PubMedBERT.
   The model was initiated from the benchmark model and is developed further in order to make the best submission possible for the **Food Hazard Detection Challenge**.
 
 - **[Submission Model LGBM PDS A2 Food Hazard Detection.ipynb]**  
@@ -121,7 +127,8 @@ The following shows the results for hazard-category and product-category tasks f
 
 | Submission File                         | Score         | Status   | 
 |-----------------------------------------|---------------|----------|
-| ✅ submission_fintuned_BioBERT.zip	   | 0.7354298639	 | Finished | 
+| ✅ submission_scibert.zip	             | 0.7529242892  | Finished | 
+|  submission_fintuned_BioBERT.zip	      | 0.7354298639	 | Finished | 
 | submission_finetuned_PubMedBERT v4.zip	| 0.7127662337	 | Finished | 
 | AnB Data Finetuned PubMedBERT.zip       | 0.6876231681  | Finished | 
 | submission.zip (LGBM)                   | 0.6428057851  | Finished | 
@@ -135,12 +142,15 @@ The following shows the results for hazard and product tasks for Subtask 1:
 
 - ✅ ***Rating shows for Sub Task 2 a score of 0.4755  for submission_fintuned_BioBERT.zip*** 
 
+- ***Rating shows for Sub Task 2 a score of 0.43  for submission_fintuned_SciBERT.zip*** 
+
 - ***Rating shows for Sub Task 2 a score of 0.3376 for submission_finetuned_PubMedBERT v4.zip***
 
 
 | Submission File                         | Score         | Status   | 
 |-----------------------------------------|---------------|----------|
-| ✅submission_fintuned_BioBERT.zip       | 0.00000       | Finished |
+| submission_scibert.zip                  |0.00000       | Finished |
+|✅submission_fintuned_BioBERT.zip       | 0.00000       | Finished |
 | submission_finetuned_PubMedBERT v4.zip  | 0.00000       | Finished |
 | AnB Data Finetuned PubMedBERT.zip	      | 0.00000       | Finished | 
 | submission.zip (LGBM)                   | 0.00000       | Finished | 
