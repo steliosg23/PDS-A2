@@ -16,6 +16,7 @@ The use of pretrained BERT models in this project stems from my MEng thesis at D
 ### Project Workflow:
 1. **Exploratory Data Analysis (EDA)**: Data cleaning, exploration, and visualization.
 2. **Modeling**: Three different approaches are used for classification:
+   - **Finetuned SciBERT**: SciBERT is a BERT model trained on scientific text, the model is now Fine-tuned on the dataset to classify food hazard-related texts..
    - **Finetuned BioBERT**: While pretrained on different biomedical corpora, the model is now Fine-tuned on the dataset to classify food hazard-related texts.
    - **Finetuned PubMedBERT**: Model was pretrained on large PubMed abstracts, and is now Fine-tuned on the dataset to classify food hazard-related texts.
    - **LightGBM**: A gradient boosting model for classification based on features derived from the data.
