@@ -217,6 +217,7 @@ Benchmark results are based on the initial versions of each model—Basic and Ad
 
 **Any other optimized versions, particularly for fine-tuning BERT models, have only been explored at the submission level. Therefore, their training is based on the conclusions drawn from the initial benchmark models as a preliminary guideline.**
 
+![PubmedBenchmark](Plots%20and%20Schemas/PubmedBenchmark.png)
 
 
 ### 🟢 Finetuned PubMedBERT Model on initial Data (Title-based):
@@ -237,6 +238,9 @@ Benchmark results are based on the initial versions of each model—Basic and Ad
 | hazard (Text)               | 0.8166   |
 | product (Text)              | 0.2331   |
 
+
+![LightGBM_Benchmark](Plots%20and%20Schemas/LightGBMBenchmark.png)
+
 ### 🟢 LightGBM Model (Title-based):
 
 | Task                        | F1-Score |
@@ -254,6 +258,9 @@ Benchmark results are based on the initial versions of each model—Basic and Ad
 | product-category (Text)     | 0.6682   |
 | hazard (Text)               | 0.7671   |
 | product (Text)              | 0.0479   |
+
+
+![AugmentedandBalancedTrainsetPubmedBenchmark](Plots%20and%20Schemas/AnBPubmedBenchmark.png)
 
 ### 🟢 Finetuned PubMedBERT Model on augmented and balanced Data (Title-based):
 
@@ -279,6 +286,7 @@ Benchmark results are based on the initial versions of each model—Basic and Ad
 The competition results suggest potential overfitting in the models. The scores for the `submission_finetuned_PubMedBERT.zip` and `AnB Data Finetuned PubMedBERT.zip` file were significantly higher for the training set compared to the test set, which may indicate that the model is overfitting to the training data. To mitigate this, I attempted data augmentation in the **data_augmentation.ipynb** file. The benchmark results using the augmented training data are as follows:
 
 ### Collected F1-Scores for Title-Focused Classification (Augmented Data)
+
 
 ### 🟢 Finetuned PubMedBERT Model on augmented and balanced Data (Title-based):
 
