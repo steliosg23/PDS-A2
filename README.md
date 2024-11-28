@@ -23,7 +23,7 @@ This method involves a two-step process:
 1. **Pretraining**: BERT models like PubMedBERT, SciBERT, or BioBERT are pretrained on large corpora using the masked language modeling objective. This helps the model learn contextual embeddings by predicting missing words in sentences.
 2. **Fine-tuning**: The pretrained model is then fine-tuned on domain-specific data, such as food hazard datasets. A classifier is added on top of BERT to adapt it for specific tasks, like hazard-category or product-category classification. During this stage, both the classifier and BERT layers are updated to optimize task-specific performance.
 
-![Fine-tuning Pretrained BERT Models](Finetuning_schema.png)
+![Fine-tuning Pretrained BERT Models](finetuning_schema.png)
 
 
 #### 🟢 Basic Model Method : LightGBM
