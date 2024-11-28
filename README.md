@@ -269,13 +269,13 @@ I am trying to explain why the augmented dataset did not improve the model's per
 
 ----
 ## ℹ️ Conclusion
-This solution for the Food Hazard Detection Challenge integrates both Finetuned BioBERT and LightGBM models to classify food safety incidents based on short titles and long descriptions. Through careful experimentation with various pretrained models and an augmented training set, the approach addresses both general and specific hazard and product classification tasks.
+This solution for the Food Hazard Detection Challenge integrates both Finetuned pretrained BERT models and LightGBM models to classify food safety incidents based on short titles and long descriptions. Through careful experimentation with various pretrained models and an augmented training set, the approach addresses both general and specific hazard and product classification tasks.
 
-Key results include a significant performance boost from switching to BioBERT due to better handling of biomedical text and a reduction in stacking loss, leading to stronger generalization and improved Macro F1 scores. Despite efforts in data augmentation to mitigate overfitting, the model's performance on the competition leaderboard remained constrained, indicating that further refinements may be necessary. The benchmarks and results provide a clear pathway for future improvements, such as exploring more diverse augmentation strategies and refining model hyperparameters.
+Key results include a significant performance boost from switching to both SciBERT and BioBERT due to better handling of scientific and biomedical text and a reduction in stacking loss, leading to stronger generalization and improved Macro F1 scores. Despite efforts in data augmentation to mitigate overfitting, the model's performance on the competition leaderboard remained constrained, indicating that further refinements may be necessary. The benchmarks and results provide a clear pathway for future improvements, such as exploring more diverse augmentation strategies and refining model hyperparameters.
 
 This repository contains all necessary files and notebooks to reproduce the results and allows for easy retraining and submission of optimized models. It serves as a comprehensive solution to the problem of food hazard classification, incorporating state-of-the-art NLP techniques and traditional machine learning models.
 
-The performance outcomes demonstrate the potential of fine-tuning pretrained models like BioBERT for domain-specific tasks and underline the importance of addressing overfitting through more innovative approaches in future iterations of the model. 
+The performance outcomes demonstrate the potential of fine-tuning pretrained models like SciBERT and BioBERT for domain-specific tasks and underline the importance of addressing overfitting through more innovative approaches in future iterations of the model. 
 
 ---
 ## ℹ️ References:
