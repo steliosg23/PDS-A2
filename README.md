@@ -86,11 +86,18 @@ These notebooks serve as the primary notebooks for this project. After conductin
   Submission notebook for a model finetuned with more methods (eg early stopping, learning rate scheduler) on the **initial training set** using PubMedBERT.
   The model was initiated from the benchmark model and is developed further in order to make the best submission possible for the **Food Hazard Detection Challenge**.
 
-- **[Submission Model LGBM PDS A2 Food Hazard Detection.ipynb]**  
-  Submission notebook for LightGBM models trained on the **initial training set**.
+Regarding the aforementioned issue with stacking loss, please refer to the diagram below for further clarification.
+
+![Average loss in "Product" class for Bert Models](average_loss_comparison_all_models.png)
 
 - **[AnB_Submission_PubMedBERT.ipynb]**  
   Submission notebook for a model finetuned on an **augmented training set** using PubMedBERT.
+
+
+- **[Submission Model LGBM PDS A2 Food Hazard Detection.ipynb]**  
+  Submission notebook for LightGBM models trained on the **initial training set**.
+
+
 
 
 ### 🟢 Benchmarks Notebooks
