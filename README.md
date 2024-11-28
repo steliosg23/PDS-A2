@@ -338,7 +338,12 @@ The performance outcomes demonstrate the potential of fine-tuning pretrained mod
 ---
 ## ℹ️ References
 
+- [Hugging Face](https://huggingface.co): For state-of-the-art machine learning models, datasets, and tools, especially in natural language processing.
+- [arXiv](https://arxiv.org): For accessing research papers and preprints on data science, machine learning, and other academic fields.
 - [ChatGPT](https://openai.com/chatgpt): For quick assistance, code help, debugging, and guidance on various data science topics.
 - [Stack Overflow](https://stackoverflow.com): For troubleshooting and solutions to coding challenges.
-- [ Towards Data Science](https://towardsdatascience.com) and [Medium](https://medium.com/tag/data-science): For articles and tutorials on data science techniques and best practices.
+- [Towards Data Science](https://towardsdatascience.com) and [Medium](https://medium.com/tag/data-science): For articles and tutorials on data science techniques and best practices.
+
+
+
 
