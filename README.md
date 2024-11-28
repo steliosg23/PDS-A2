@@ -115,6 +115,7 @@ Both models evaluate accuracy, precision, recall, and F1-score.
 ### ➡️ Step 5: Retraining for Submission
 Retrain using the submission notebooks to create final submissions for competitions based on the best model of the respective benchmarks notebooks:
 
+- **For SciBERT on initial data**: Run `Submission Model Finetuned SciBERT PDS A2 Food Hazard Detection.ipynb`.
 - **For BioBERT on initial data**: Run `Submission Model Finetuned BioBERT PDS A2 Food Hazard Detection.ipynb`.
 - **For PubMedBERT on initial data**: Run `Submission Model Finetuned PubMedBERT PDS A2 Food Hazard Detection.ipynb`.
 - **For LightGBM**: Run `Sumission Model LGBM  PDS A2 Food Hazard Detection.ipynb`.
