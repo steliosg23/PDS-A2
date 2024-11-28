@@ -159,6 +159,9 @@ Retrain using the submission notebooks to create final submissions for competiti
 
 The following shows the results for hazard-category and product-category tasks for Subtask 1:
 
+
+![Results for Subtask 1 (Hazard-category, Product-category)](subtask1_results_with_legend_and_values.png)
+
 | Submission File                         | Score         | Status   | 
 |-----------------------------------------|---------------|----------|
 | ✅ submission_scibert.zip	             | 0.7529242892  | Finished | 
@@ -173,6 +176,8 @@ The following shows the results for hazard-category and product-category tasks f
 ### Competition Results for Subtask 2 (Hazard, Product)
 
 The following shows the results for hazard and product tasks for Subtask 1:
+
+
 
 - ✅ ***Rating shows for Sub Task 2 a score of 0.4755  for submission_fintuned_BioBERT.zip*** 
 
