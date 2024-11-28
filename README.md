@@ -46,14 +46,18 @@ The following files are included in the repository:
 
 These notebooks serve as the primary notebooks for this project. After conducting some benchmarks to evaluate the effectiveness of using the "title" versus the "text" feature as the main input, we decided to train the model using the "text" feature along with additional features such as 'year', 'month', 'day', and 'country'. Following the training, the model is used to make predictions on the unlabeled contest data.
 
-- ✅ **[Submission_Model_Finetuned_SciBERT_PDS_A2_Food_Hazard_Detection.ipynb] -- Best performing model for Sub Task 1 Hazard-Caterogry, Product-Category--**
+- ✅ **[Submission_Model_Finetuned_SciBERT_PDS_A2_Food_Hazard_Detection.ipynb]**
+
+  **-- Best performing model for Sub Task 1 Hazard-Caterogry, Product-Category--**
 
   **Sub Task1 : Macro F1: 75%**
   
   Pretrained model switched to SciBERT due to stacking loss issues in the product class.
   SciBERT, a pretrained language model based on BERT, was developed to overcome the lack of high-quality labeled scientific data. By leveraging unsupervised pretraining on a large multi-domain corpus of scientific publications, SciBERT improves performance on downstream scientific NLP tasks. For the Food Hazard Detection Challenge, SciBERT was trained on the initial dataset and refined using early stopping and a learning rate scheduler, achieving better results by addressing these challenges effectively.
 
-- ✅ **[Submission_Model_Finetuned_BioBERT_PDS_A2_Food_Hazard_Detection.ipynb] -- Best performing model for Sub Task 2 Hazard, Product--**
+- ✅ **[Submission_Model_Finetuned_BioBERT_PDS_A2_Food_Hazard_Detection.ipynb]**
+
+  **-- Best performing model for Sub Task 2 Hazard, Product--**
   
   **Sub Task 2:Macro F1: 47%**
 
@@ -132,7 +136,7 @@ Retrain using the submission notebooks to create final submissions for competiti
 
 ### Competition Results for Subtask 1 (Hazard-category, Product-category)
 
-Leaderboard: https://codalab.lisn.upsaclay.fr/competitions/19955#results
+**Leaderboard: https://codalab.lisn.upsaclay.fr/competitions/19955#results**
 
 The following shows the results for hazard-category and product-category tasks for Subtask 1:
 
