@@ -33,7 +33,7 @@ LightGBM is a gradient-boosting framework based on decision trees:
 - The framework uses histogram-based computation and a leaf-wise growth strategy to optimize training speed and memory usage.
 - By focusing on minimizing residuals and aggregating predictions across all trees, LightGBM achieves high accuracy and efficiency, making it suitable for large-scale classification problems.
 
-
+![LightGBM](LightGBM_schema.png)
 
 ---
 ## ℹ️ Overview
