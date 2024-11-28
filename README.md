@@ -217,8 +217,6 @@ Benchmark results are based on the initial versions of each model—Basic and Ad
 
 **Any other optimized versions, particularly for fine-tuning BERT models, have only been explored at the submission level. Therefore, their training is based on the conclusions drawn from the initial benchmark models as a preliminary guideline.**
 
-![PubmedBenchmark](Plots%20and%20Schemas/PubmedBenchmark.png)
-
 
 ### 🟢 Finetuned PubMedBERT Model on initial Data (Title-based):
 
@@ -238,8 +236,8 @@ Benchmark results are based on the initial versions of each model—Basic and Ad
 | hazard (Text)               | 0.8166   |
 | product (Text)              | 0.2331   |
 
+![PubmedBenchmark](Plots%20and%20Schemas/PubmedBenchmark.png)
 
-![LightGBM_Benchmark](Plots%20and%20Schemas/LightGBMBenchmark.png)
 
 ### 🟢 LightGBM Model (Title-based):
 
@@ -259,8 +257,9 @@ Benchmark results are based on the initial versions of each model—Basic and Ad
 | hazard (Text)               | 0.7671   |
 | product (Text)              | 0.0479   |
 
+![LightGBM_Benchmark](Plots%20and%20Schemas/LightGBMBenchmark.png)
 
-![AugmentedandBalancedTrainsetPubmedBenchmark](Plots%20and%20Schemas/AnBPubmedBenchmark.png)
+
 
 ### 🟢 Finetuned PubMedBERT Model on augmented and balanced Data (Title-based):
 
@@ -279,6 +278,9 @@ Benchmark results are based on the initial versions of each model—Basic and Ad
 | product-category   | 0.9393   |
 | hazard             | 0.8370   |
 | product            | 0.5500   |
+
+![AugmentedandBalancedTrainsetPubmedBenchmark](Plots%20and%20Schemas/AnBPubmedBenchmark.png)
+
 
 ---
 ## ℹ️ Overfitting Indications in some experiments from Competition Results
