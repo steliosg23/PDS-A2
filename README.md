@@ -142,7 +142,7 @@ The following shows the results for hazard-category and product-category tasks f
 **While the submission notebook introduces notable improvements in training methodology and evaluation fairness, these refinements result in only marginal performance gains in the Codalab contest compared to the benchmarks.**
 
 
-# Competition Results for Subtask 2 (Hazard, Product)
+### Competition Results for Subtask 2 (Hazard, Product)
 
 The following shows the results for hazard and product tasks for Subtask 1:
 
