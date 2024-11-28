@@ -326,7 +326,7 @@ This repository contains all necessary files and notebooks to reproduce the resu
 The performance outcomes demonstrate the potential of fine-tuning pretrained models like SciBERT and BioBERT for domain-specific tasks and underline the importance of addressing overfitting through more innovative approaches in future iterations of the model. 
 
 ---
-## ℹ️ References:
+## ℹ️ References
 
 - [ChatGPT](https://openai.com/chatgpt): For quick assistance, code help, debugging, and guidance on various data science topics.
 - [Stack Overflow](https://stackoverflow.com): For troubleshooting and solutions to coding challenges.
