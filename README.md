@@ -87,7 +87,9 @@ These notebooks serve as the primary notebooks for this project. After conductin
   Submission notebook for a model finetuned with more methods (eg early stopping, learning rate scheduler) on the **initial training set** using PubMedBERT.
   The model was initiated from the benchmark model and is developed further in order to make the best submission possible for the **Food Hazard Detection Challenge**.
 
-Regarding the aforementioned issue with stacking loss, please refer to the diagram below for further clarification.
+Regarding the previously mentioned issue with stacking loss, please refer to the diagram below for further clarification.
+
+It can be observed that the average loss for the SciBERT and BioBERT models decreases towards zero, indicating better generalization. This is further supported by the performance scores achieved on the unlabeled validation data.
 
 ![Average loss in "Product" class for Bert Models](Plots%20and%20Schemas/average_loss_comparison_all_models.png)
 
