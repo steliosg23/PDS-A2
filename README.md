@@ -186,8 +186,8 @@ The following shows the results for hazard and product tasks for Subtask 1:
 | submission_scibert.zip                  |0.43           | Finished |
 |✅submission_fintuned_BioBERT.zip        | 0.4755        | Finished |
 | submission_finetuned_PubMedBERT v4.zip  | 0.3376        | Finished |
-| AnB Data Finetuned PubMedBERT.zip	      |(N/A CodaLab Limitations)      | Finished | 
-| submission.zip (LGBM)                   |(N/A CodaLab Limitations) | Finished | 
+| AnB Data Finetuned PubMedBERT.zip	      | 0.2486        | Finished | 
+| submission.zip (LGBM)                   | 0.2057        | Finished | 
 
 
 
