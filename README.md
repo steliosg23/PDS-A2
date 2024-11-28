@@ -21,7 +21,7 @@ The use of pretrained BERT models in this project stems from my **MEng thesis** 
    - **Finetuned BioBERT**: While pretrained on different biomedical corpora, the model is now Fine-tuned on the dataset to classify food hazard-related texts.
    - **Finetuned PubMedBERT**: Model was pretrained on large PubMed abstracts, and is now Fine-tuned on the dataset to classify food hazard-related texts.
    - **LightGBM**: A gradient boosting model for classification based on features derived from the data.
-4. **Evaluation**: Both models are evaluated on performance metrics such as accuracy, precision, recall, and F1-score.
+4. **Evaluation**: All models are evaluated on performance metrics such as accuracy, precision, recall, and F1-score.
 5. **Training and Submission**: Generation of final predictions based on the final optimal model and submission in the required format on CodaLab competition.
 
 ### Subtasks (Performed Separately for Title and Text):
