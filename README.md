@@ -24,7 +24,7 @@ This method involves a two-step process:
 1. **Pretraining**: BERT models like PubMedBERT, SciBERT, or BioBERT are pretrained on large corpora using the masked language modeling objective. This helps the model learn contextual embeddings by predicting missing words in sentences.
 2. **Fine-tuning**: The pretrained model is then fine-tuned on domain-specific data, such as food hazard datasets. A classifier is added on top of BERT to adapt it for specific tasks, like hazard-category or product-category classification. During this stage, both the classifier and BERT layers are updated to optimize task-specific performance.
 
-![Fine-tuning Pretrained BERT Models](finetuning_schema.png)
+![Fine-tuning Pretrained BERT Models](Plots%20and%20Schemas/finetuning_schema.png)
 
 
 #### 🟢 Basic Model Method : LightGBM
@@ -34,7 +34,7 @@ LightGBM is a gradient-boosting framework based on decision trees:
 - The framework uses histogram-based computation and a leaf-wise growth strategy to optimize training speed and memory usage.
 - By focusing on minimizing residuals and aggregating predictions across all trees, LightGBM achieves high accuracy and efficiency, making it suitable for large-scale classification problems.
 
-![LightGBM](LightGBM_schema.png)
+![LightGBM](Plots%20and%20Schemas/LightGBM_schema.png)
 
 ---
 ## ℹ️ Overview
@@ -89,7 +89,7 @@ These notebooks serve as the primary notebooks for this project. After conductin
 
 Regarding the aforementioned issue with stacking loss, please refer to the diagram below for further clarification.
 
-![Average loss in "Product" class for Bert Models](average_loss_comparison_all_models.png)
+![Average loss in "Product" class for Bert Models](Plots%20and%20Schemas/average_loss_comparison_all_models.png)
 
 
 - **[AnB_Submission_PubMedBERT.ipynb]**  
@@ -169,7 +169,7 @@ Retrain using the submission notebooks to create final submissions for competiti
 The following shows the results for hazard-category and product-category tasks for Subtask 1:
 
 
-![Results for Subtask 1 (Hazard-category, Product-category)](subtask1_results_with_legend_and_values.png)
+![Results for Subtask 1 (Hazard-category, Product-category)](Plots%20and%20Schemas/subtask1_results_with_legend_and_values.png)
 
 | Submission File                         | Score         | Status   | 
 |-----------------------------------------|---------------|----------|
@@ -186,7 +186,7 @@ The following shows the results for hazard-category and product-category tasks f
 
 The following shows the results for hazard and product tasks for Subtask 1:
 
-![Results for Subtask 2 (Hazard, Product)](subtask2_results_with_legend_and_values.png)
+![Results for Subtask 2 (Hazard, Product)](Plots%20and%20Schemas/subtask2_results_with_legend_and_values.png)
 
 
 - ✅ ***Rating shows for Sub Task 2 a score of 0.4755  for submission_fintuned_BioBERT.zip*** 
