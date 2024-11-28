@@ -129,7 +129,7 @@ Retrain using the submission notebooks to create final submissions for competiti
 ---
 ## ℹ️ SemEval 2025 Task 9 - The Food Hazard Detection Challenge Results
 
-# Competition Results for Subtask 1 (Hazard-category, Product-category)
+### Competition Results for Subtask 1 (Hazard-category, Product-category)
 
 Leaderboard: https://codalab.lisn.upsaclay.fr/competitions/19955#results
 
@@ -146,7 +146,7 @@ The following shows the results for hazard-category and product-category tasks f
 **While the submission notebook introduces notable improvements in training methodology and evaluation fairness, these refinements result in only marginal performance gains in the Codalab contest compared to the benchmarks.**
 
 
-# Competition Results for Subtask 2 (Hazard, Product)
+### Competition Results for Subtask 2 (Hazard, Product)
 
 The following shows the results for hazard and product tasks for Subtask 1:
 
