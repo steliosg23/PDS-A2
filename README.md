@@ -42,7 +42,8 @@ These notebooks serve as the primary notebooks for this project. After conductin
 - ✅ **[Submission_Model_Finetuned_SciBERT_PDS_A2_Food_Hazard_Detection.ipynb] -- Best performing model for Sub Task 1 Hazard-Caterogry, Product-Category--**
   Sub Task1 : Macro F1: 75%
   
-  Pretrained model switched to SciBERT due to stacking loss issues in the product class. BioBERT, which is specifically designed for biomedical text, provided better results by addressing these issues more effectively. The model was trained on **intial training set** and was further refined using methods like early stopping and learning rate scheduler to optimize performance, ultimately aiming to deliver the best possible submission for the Food Hazard Detection Challenge.
+  Pretrained model switched to SciBERT due to stacking loss issues in the product class.
+  SciBERT, a pretrained language model based on BERT, was developed to overcome the lack of high-quality labeled scientific data. By leveraging unsupervised pretraining on a large multi-domain corpus of scientific publications, SciBERT improves performance on downstream scientific NLP tasks. For the Food Hazard Detection Challenge, SciBERT was trained on the initial dataset and refined using early stopping and a learning rate scheduler, achieving better results by addressing these challenges effectively.
 
 - ✅ **[Submission_Model_Finetuned_BioBERT_PDS_A2_Food_Hazard_Detection.ipynb] -- Best performing model for Sub Task 2 Hazard, Product--**
   
