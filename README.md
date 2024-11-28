@@ -185,11 +185,11 @@ The following shows the results for hazard and product tasks for Subtask 1:
 
 | Submission File                         | Score         | Status   | 
 |-----------------------------------------|---------------|----------|
-| submission_scibert.zip                  |0.00000       | Finished |
-|✅submission_fintuned_BioBERT.zip       | 0.00000       | Finished |
-| submission_finetuned_PubMedBERT v4.zip  | 0.00000       | Finished |
-| AnB Data Finetuned PubMedBERT.zip	      | 0.00000       | Finished | 
-| submission.zip (LGBM)                   | 0.00000       | Finished | 
+| submission_scibert.zip                  |0.43           | Finished |
+|✅submission_fintuned_BioBERT.zip        | 0.4755        | Finished |
+| submission_finetuned_PubMedBERT v4.zip  | 0.3376        | Finished |
+| AnB Data Finetuned PubMedBERT.zip	      | N/A (LOW)      | Finished | 
+| submission.zip (LGBM)                   | N/A (LOW)      | Finished | 
 
 
 
