@@ -5,6 +5,10 @@
 ### Stylianos Giagkos f3352410
 
 ---
+![Project Workflow]("C:\Users\steli\OneDrive\Desktop\Stelios\DSAUEB\Trimester 1\PDS\A2\PDS-A2\Infographic.jpg")
+
+
+---
 This repository contains the solution for the **Food Hazard Detection Challenge**. The challenge involves classifying food safety-related incidents based on short titles and long descriptions. The solution leverages both **Finetuned Pretrained Bert Models** and **LightGBM (LGBM)** models for classification into hazard-category, product-category, hazard, and product classifications.
 
 ### ⬛ **Insights**
