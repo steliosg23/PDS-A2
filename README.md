@@ -168,10 +168,10 @@ Retrain using the submission notebooks to create final submissions for competiti
 
 **Leaderboard: https://codalab.lisn.upsaclay.fr/competitions/19955#results**
 
-The following shows the results for hazard-category and product-category tasks for Subtask 1:
+The following shows the F1 Macro Scores for hazard-category and product-category tasks for Subtask 1:
 
 
-![Results for Subtask 1 (Hazard-category, Product-category)](Plots%20and%20Schemas/subtask1_results_with_legend_and_values.png)
+![F1 Macro Scores for Subtask 1 (Hazard-category, Product-category)](Plots%20and%20Schemas/subtask1_results_with_legend_and_values.png)
 
 | Submission File                         | Score         | Status   | 
 |-----------------------------------------|---------------|----------|
@@ -186,9 +186,9 @@ The following shows the results for hazard-category and product-category tasks f
 
 ### Competition Results for Subtask 2 (Hazard, Product)
 
-The following shows the results for hazard and product tasks for Subtask 1:
+The following shows the F1 Macro Scores for hazard and product tasks for Subtask 1:
 
-![Results for Subtask 2 (Hazard, Product)](Plots%20and%20Schemas/subtask2_results_with_legend_and_values.png)
+![F1 Macro Scores for Subtask 2 (Hazard, Product)](Plots%20and%20Schemas/subtask2_results_with_legend_and_values.png)
 
 
 - ✅ ***Rating shows for Sub Task 2 a score of 0.4755  for submission_fintuned_BioBERT.zip*** 
