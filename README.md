@@ -177,6 +177,7 @@ The following shows the results for hazard-category and product-category tasks f
 
 The following shows the results for hazard and product tasks for Subtask 1:
 
+![Results for Subtask 2 (Hazard, Product)](subtask2_results_with_legend_and_values.png)
 
 
 - ✅ ***Rating shows for Sub Task 2 a score of 0.4755  for submission_fintuned_BioBERT.zip*** 
