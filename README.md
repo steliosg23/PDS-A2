@@ -1,3 +1,4 @@
+---
 # Master in Data Science AUEB 2024-2025
 # SemEval 2025 Task 9 - The Food Hazard Detection Challenge
 ### Practical Data Science - Assignment 2
