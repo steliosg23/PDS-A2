@@ -88,7 +88,7 @@ These notebooks serve as the primary notebooks for this project. After conductin
 
 Regarding the aforementioned issue with stacking loss, please refer to the diagram below for further clarification.
 
-![Average loss in "Product" class for Bert Models](average_loss_comparison_all_models.png){: width="150"}
+![Average loss in "Product" class for Bert Models](average_loss_comparison_all_models.png)
 
 
 - **[AnB_Submission_PubMedBERT.ipynb]**  
