@@ -5,7 +5,7 @@
 ### Stylianos Giagkos f3352410
 
 ---
-![Project Workflow](file:///C:/Users/steli/OneDrive/Desktop/Stelios/DSAUEB/Trimester%201/PDS/A2/PDS-A2/Plots%20and%20Schemas/Infographic.png)
+![Project Workflow](./Plots and Schemas/Infographic.png)
 
 
 ---
