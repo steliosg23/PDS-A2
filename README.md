@@ -336,7 +336,7 @@ This repository contains all necessary files and notebooks to reproduce the resu
 The performance outcomes demonstrate the potential of fine-tuning pretrained models like SciBERT and BioBERT for domain-specific tasks and underline the importance of addressing overfitting through more innovative approaches in future iterations of the model. 
 
 ---
-## ℹ️ References
+## ℹ️ Resources and Tools
 
 - [Hugging Face](https://huggingface.co): For state-of-the-art machine learning models, datasets, and tools, especially in natural language processing.
 - [arXiv](https://arxiv.org): For accessing research papers and preprints on data science, machine learning, and other academic fields.
