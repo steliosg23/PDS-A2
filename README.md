@@ -321,7 +321,7 @@ I am trying to explain why the augmented dataset did not improve the model's per
 
 1. **Nature of Augmentation**: The augmentation techniques I applied might not have introduced enough diversity or complexity in the data. This could mean the model didn't get new, meaningful examples to improve its ability to generalize.
 
-2. **Overfitting**: Despite using an augmented dataset with  and over/under sampling, the model might still was overfitting to both the original and augmented data. 
+2. **Overfitting**: Despite using an augmented dataset with back translations and over/under sampling, the model might still was overfitting to both the original and augmented data. 
 
 **An assumption is that the augmented data is too similar to the original, the model may memorize patterns rather than learning to generalize, leading to poor performance on unseen data.**
 
