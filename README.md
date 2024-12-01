@@ -344,6 +344,10 @@ The performance outcomes demonstrate the potential of fine-tuning pretrained mod
 - [Stack Overflow](https://stackoverflow.com): For troubleshooting and solutions to coding challenges.
 - [Towards Data Science](https://towardsdatascience.com) and [Medium](https://medium.com/tag/data-science): For articles and tutorials on data science techniques and best practices.
 
+---
+## ℹ️ License
+
+This project is licensed under the [MIT License](LICENSE.txt) - see the LICENSE.txt file for details.
 
 
 
