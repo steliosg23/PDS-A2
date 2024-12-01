@@ -321,7 +321,7 @@ I am trying to explain why the augmented dataset did not improve the model's per
 
 1. **Nature of Augmentation**: The augmentation techniques I applied might not have introduced enough diversity or complexity in the data. This could mean the model didn't get new, meaningful examples to improve its ability to generalize.
 
-2. **Overfitting**: Despite using an augmented dataset with  and over/under sampling, the model might still was overfitting to both the original and augmented data. 
+2. **Overfitting**: Despite using an augmented dataset with back translations and over/under sampling, the model might still was overfitting to both the original and augmented data. 
 
 **An assumption is that the augmented data is too similar to the original, the model may memorize patterns rather than learning to generalize, leading to poor performance on unseen data.**
 
@@ -336,9 +336,14 @@ This repository contains all necessary files and notebooks to reproduce the resu
 The performance outcomes demonstrate the potential of fine-tuning pretrained models like SciBERT and BioBERT for domain-specific tasks and underline the importance of addressing overfitting through more innovative approaches in future iterations of the model. 
 
 ---
-## ℹ️ References
+## ℹ️ Resources and Tools
 
+- [Hugging Face](https://huggingface.co): For state-of-the-art machine learning models, datasets, and tools, especially in natural language processing.
+- [arXiv](https://arxiv.org): For accessing research papers and preprints on data science, machine learning, and other academic fields.
 - [ChatGPT](https://openai.com/chatgpt): For quick assistance, code help, debugging, and guidance on various data science topics.
 - [Stack Overflow](https://stackoverflow.com): For troubleshooting and solutions to coding challenges.
-- [ Towards Data Science](https://towardsdatascience.com) and [Medium](https://medium.com/tag/data-science): For articles and tutorials on data science techniques and best practices.
+- [Towards Data Science](https://towardsdatascience.com) and [Medium](https://medium.com/tag/data-science): For articles and tutorials on data science techniques and best practices.
+
+
+
 
